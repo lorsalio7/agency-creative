@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+  width: 136px;
+  height: 50px;
+}
+
+.logo__icon {
+  flex-shrink: 0;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.logo__top-text {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(var(--color-cod-gray));
+}
+
+.logo__bottom-text {
+  color: rgb(var(--color-cod-gray));
+}

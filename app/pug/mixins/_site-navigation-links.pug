@@ -1,0 +1,4 @@
+mixin site-navigation-item(arr)
+  each item in arr
+    li.site-navigation__item
+      a(href= item.url).site-navigation__link #{item.name}

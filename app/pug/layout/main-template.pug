@@ -1,0 +1,28 @@
+block vars
+  - var pageTitle = "Main title";
+  - var htmlClass = "";
+  - var bodyClass = "";
+
+
+block mixins
+  include ../mixins/_svg.pug
+
+  include ../mixins/_site-navigation-links.pug
+  include ../mixins/_svg.pug
+
+doctype html
+html(lang="en" class= htmlClass)
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= pageTitle
+    block styles
+      link(rel="stylesheet", href="css/styles.min.css")
+  body(class= bodyClass)
+    include ../includes/_header.pug
+    block content
+    include ../includes/_footer.pug
+
+    block scripts
+      script(src="js/script.min.js")

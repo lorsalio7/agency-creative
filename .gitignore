@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+Readme-for-me.md
+.vscode
+.publish
+*.log
+*.sublime
+*.rar
+*.zip
+.idea
+Thumbs.db

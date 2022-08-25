@@ -1,0 +1,16 @@
+//- Расширяем нужную страницу заранее заготовленным шаблоном
+extends ../layout/main-template.pug
+//- Если необходимо изменить переменную используем block vars(в шаблоне указываем все переменные)
+block vars
+  - var pageTitle = "New";
+  - var htmlClass = "index-html";
+  - var bodyClass = "page";
+  - var siteNavigation = [{linkName: "Home", linkUrl: "#", additionalClass: "site-navigation__link--active"},{linkName: "About", linkUrl: "#", additionalClass: ""},{linkName: "Services", linkUrl: "#", additionalClass: ""},{linkName: "Projects", linkUrl: "#", additionalClass: ""}];
+//- В блоке content размещаем контент
+
+block content
+  main.index-main
+    h2.title Hello world!
+//- В блоке scripts подключаем нужные скрипты
+block prepend scripts
+  script(src="js/slider.min.js")

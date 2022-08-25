@@ -1,0 +1,20 @@
+.site-navigation {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.site-navigation__item {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.site-navigation__link {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(var(--color-cod-gray));
+}
+
+.site-navigation__link--active {
+  font-weight: 700;
+}

@@ -1,0 +1,9 @@
+// @include font("$name", "$font-family", $weight);
+@include font("QuicksandLight", "Quicksand", 300);
+@include font("QuicksandRegular", "Quicksand", 400);
+@include font("QuicksandSemiBold", "Quicksand", 600);
+@include font("QuicksandBold", "Quicksand", 700);
+@include font("NunitoRegular", "Nunito", 400);
+@include font("NunitoSemiBold", "Nunito", 600);
+@include font("NunitoBold", "Nunito", 700);
+@include font("NunitoExtraBold", "Nunito", 800);

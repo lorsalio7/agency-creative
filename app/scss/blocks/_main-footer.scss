@@ -1,0 +1,111 @@
+.main-footer {
+  padding-top: 132px;
+  padding-bottom: 18px;
+  background-color: rgb(var(--color-thunder));
+}
+
+.main-footer__container {
+  margin: 0 auto;
+  max-width: 1270px;
+}
+
+.main-footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
+.main-footer__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-left: 72px;
+  width: 100%;
+}
+
+.main-footer-column__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(var(--color-white));
+}
+
+.main-footer-column__content {
+  margin-left: 0;
+  line-height: 45px;
+}
+
+.main-footer-column__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer-column__link {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(var(--color-white));
+}
+
+.main-footer-column__link:hover,
+.main-footer-column__link:focus {
+  text-decoration: underline;
+}
+
+.main-footer-column__address {
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(var(--color-white));
+}
+
+.main-footer-column__email {
+  text-decoration: none;
+  color: rgb(var(--color-white));
+}
+
+.main-footer-column__email:hover,
+.main-footer-column__email:focus {
+  text-decoration: underline;
+}
+
+.main-footer__socials {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  border-bottom: 1px solid rgb(var(--color-white));
+  padding-right: 50px;
+  padding-bottom: 16px;
+  padding-left: 50px;
+}
+
+.socials-list__item {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.socials-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(var(--color-white));
+  transition: opacity 0.3s ease;
+}
+
+.socials-list__link:hover,
+.socials-list__link:focus {
+  opacity: 0.6;
+}
+
+.main-footer__copyright {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(var(--color-white));
+}

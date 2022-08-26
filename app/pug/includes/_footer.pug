@@ -1,2 +1,25 @@
 footer.main-footer
-
+  .container.main-footer__container
+    .main-footer__content
+      a.logo.logo--footer
+        +svg("logo__icon", "logo-ic", 53, 50)
+        .logo__text
+          span.logo__top-text Agency
+          span.logo__bottom-text Creative
+      dl.main-footer__list
+        +main-footer-column("Terms & policies", termsArray)
+        +main-footer-column("Company", companyArray)
+        +main-footer-column("Contact", contactArray)
+        .main-footer__column.main-footer-column
+          dt.main-footer-column__title Location
+          dd.main-footer-column__content
+            address.main-footer-column__address.
+              PT Osiris Real Estate Internasional #[br] Jl. KH. Wahid Hasyim Kel No.10D#[br]Jakarta, Indonesia#[br]
+              #[a(href="mailto:team@OsirisRealEstate.com" class="main-footer-column__email") team@OsirisRealEstate.com]
+    ul.main-footer__socials.socials-list
+      each item in footerSocialLinks
+        li.socials-list__item
+          a(href= item.linkUrl title= item.linkTitle).socials-list__link
+            span.visually-hidden= item.linkTitle
+            +svg(item.linkIconClassname, item.linkIconName, item.linkIconWidth, item.linkIconHeight)
+    p.main-footer__copyright Copyright &copy; 2022 Agency Creative. All Right Reserved

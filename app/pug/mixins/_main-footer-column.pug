@@ -1,0 +1,8 @@
+mixin main-footer-column(columnTitle, columnArray)
+  .main-footer__column.main-footer-column
+    dt.main-footer-column__title= columnTitle
+    dd.main-footer-column__content
+      ul.main-footer-column__list
+        each item in columnArray
+          li.main-footer-column__item
+            a(href= item.linkUrl).main-footer-column__link= item.linkName

@@ -1,18 +1,41 @@
 .button {
-  border: 1px solid rgb(var(--color-dodger-blue));
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid transparent;
   border-radius: 25px;
   padding: 12px 50px;
   height: 48px;
   font-weight: 700;
-  line-height: 24px;
-  color: rgb(var(--color-dodger-blue));
-  background-color: rgb(var(--color-white));
-  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  user-select: none;
 }
 
-.button:hover,
-.button:focus {
+.button--outline {
+  border: 1px solid rgb(var(--color-dodger-blue));
+  color: rgb(var(--color-dodger-blue));
+  background-color: rgb(var(--color-white));
+}
+
+.button--outline:hover,
+.button--outline:focus {
   color: rgb(var(--color-white));
   background-color: rgb(var(--color-dodger-blue));
+}
+
+.button--primary {
+  border: 1px solid rgb(var(--color-dodger-blue));
+  box-shadow: 0 4px 8px rgb(var(--color-dodger-blue) / 50%);
+  color: rgb(var(--color-white));
+  background-color: rgb(var(--color-dodger-blue));
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  color: rgb(var(--color-dodger-blue));
+  background-color: rgb(var(--color-white));
 }

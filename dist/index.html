@@ -9,7 +9,7 @@
   </head>
   <body class="page">
     <header class="main-header">
-      <div class="container main-header__container">
+      <div class="container">
         <nav class="main-navigation"><a class="logo">
             <svg class="logo__icon" width="53" height="50">
               <use xlink:href="img/sprite.svg#logo-ic"></use>
@@ -21,15 +21,48 @@
             <li class="site-navigation__item"><a class="site-navigation__link " href="#">Services</a></li>
             <li class="site-navigation__item"><a class="site-navigation__link " href="#">Projects</a></li>
           </ul>
-          <button class="button" type="button">Contact us</button>
+          <button class="button button--outline" type="button">Contact us</button>
         </nav>
       </div>
     </header>
     <main class="index-main">
-      <h2 class="title">Hello world!</h2>
+      <h1 class="visually-hidden">Website for a creative agency helping your business</h1>
+      <div class="hero">
+        <div class="container">
+          <div class="hero__element-1">
+            <h2 class="hero__title">Make your dream business goal come true</h2>
+            <p class="hero__description">when you need us for improve your business,<br> then come with us to help your business have reach it, you just sit and feel that goal</p>
+            <div class="hero__button"><a class="button button--primary" href="#">Start Project</a></div>
+          </div>
+          <div class="hero__element-2">
+            <div class="hero__card hero-card hero-card--projects"><span class="hero-card__subtitle">Great project</span>
+              <p class="hero-card__description"><b>800+</b> Done</p>
+            </div>
+            <div class="hero__card hero-card hero-card--review">
+              <blockquote class="hero__review hero-review">
+                <header class="hero-review__header">
+                  <picture>
+                    <source srcset="img/hero-review-photo.webp" type="image/webp"><img class="hero-review__image" loading="lazy" src="img/hero-review-photo.jpg" width="32" height="32" alt="User photo">
+                  </picture>
+                  <div class="hero-review__about-user">
+                    <cite class="hero-review__name">Bill Adams</cite>
+                    <p class="hero-review__position">CEO UpTech</p>
+                  </div>
+                </header>
+                <p class="hero-review__quote">This team is really the best in its field,I don't regret working with them, and will come back again thanks</p>
+              </blockquote>
+            </div>
+            <div class="hero__photo-wrapper">
+              <picture>
+                <source srcset="img/team-photo.webp" type="image/webp"><img class="hero__photo" loading="lazy" src="img/team-photo.jpg" width="739" height="501" alt="Photo team Creative Agency">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
-      <div class="container main-footer__container">
+      <div class="container">
         <div class="main-footer__content"><a class="logo logo--footer">
             <svg class="logo__icon" width="53" height="50">
               <use xlink:href="img/sprite.svg#logo-ic"></use>

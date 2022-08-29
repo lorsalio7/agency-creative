@@ -1,5 +1,5 @@
 header.main-header
-  .container.main-header__container
+  .container
     nav.main-navigation
       a.logo
         +svg("logo__icon", "logo-ic", 53, 50)
@@ -10,4 +10,4 @@ header.main-header
         each link in siteNavigation
           li.site-navigation__item
             a(href= link.linkUrl class=`site-navigation__link ${link.additionalClass}`) #{link.linkName}
-      button(type="button").button Contact us
+      button(type="button").button.button--outline Contact us

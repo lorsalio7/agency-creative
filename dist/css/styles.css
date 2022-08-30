@@ -599,8 +599,12 @@ body {
 }
 
 .button {
-  display: inline-block;
-  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid transparent;
   border-radius: 25px;
   padding: 12px 50px;
@@ -620,6 +624,11 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.button__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .button--outline {
@@ -649,7 +658,7 @@ body {
 }
 
 .hero {
-  padding-bottom: 44px;
+  padding-bottom: 213px;
 }
 
 .hero__element-1 {
@@ -890,6 +899,106 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(var(--color-dodger-blue));
+}
+
+.section-header__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(var(--color-cod-gray));
+}
+
+.about-us {
+  padding-bottom: 100px;
+}
+
+.about-us__header {
+  margin-bottom: 45px;
+}
+
+.about-us__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us__photo-wrapper {
+  position: relative;
+  margin-right: 46px;
+}
+
+.about-us__photo-wrapper::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -18px;
+  z-index: -1;
+  width: 99px;
+  height: 71px;
+  background-image: url("../img/orange-dots.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-us__photo-wrapper::after {
+  content: "";
+  position: absolute;
+  right: -38px;
+  bottom: -7px;
+  z-index: -1;
+  width: 99px;
+  height: 71px;
+  background-image: url("../img/purple-dots.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-us__photo {
+  border-radius: 24px;
+}
+
+.about-us__text-content {
+  padding: 20px;
+}
+
+.about-us__description {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgb(var(--color-tundora));
+}
+
+.about-us__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us__link {
+  margin-right: 25px;
 }
 
 .main-footer {

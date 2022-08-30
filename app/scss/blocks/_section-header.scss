@@ -1,0 +1,21 @@
+.section-header {
+  text-align: center;
+}
+
+.section-header__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(var(--color-dodger-blue));
+}
+
+.section-header__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(var(--color-cod-gray));
+}

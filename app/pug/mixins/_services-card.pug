@@ -1,0 +1,4 @@
+mixin serviceCard(array)
+  each item in array
+    li(class="services__item services-card" + " " + item.cardClassname)
+      h3.services-card__title= item.cardTitle

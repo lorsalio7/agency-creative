@@ -1,0 +1,12 @@
+mixin testimonialsCards(array)
+  each item in array
+    li.testimonials__item
+      blockquote.quote
+        header.quote__header
+          picture
+            source(srcset= item.imageUrl+".webp" type="image/webp")
+            img(loading="lazy" src= item.imageUrl+".jpg" width="70" height="70" alt="Photo user "+item.reviewName).quote__avatar
+          .quote__about-user
+            cite.quote__name= item.reviewName
+            p.quote__position= item.userPosition
+        p.quote__review= item.reviewText

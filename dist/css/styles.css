@@ -921,6 +921,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 55px;
+  line-height: initial;
   color: rgb(var(--color-cod-gray));
 }
 
@@ -1246,9 +1247,9 @@ body {
 
 .portfolio-card:hover,
 .portfolio-card:focus {
-  -webkit-transform: scale(1.12);
-      -ms-transform: scale(1.12);
-          transform: scale(1.12);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .portfolio-card__link {
@@ -1385,6 +1386,92 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: rgba(var(--color-tundora)/80%);
+}
+
+.offer {
+  padding-top: 148px;
+  padding-bottom: 140px;
+}
+
+.offer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer__element-1 {
+  max-width: 490px;
+}
+
+.offer__header {
+  margin-bottom: 33px;
+  text-align: left;
+}
+
+.offer__description-text {
+  margin-bottom: 24px;
+}
+
+.offer__element-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 382px;
+}
+
+.offer__first-picture {
+  position: relative;
+  z-index: 10;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: -32px;
+}
+
+.offer__first-picture::after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  top: -54px;
+  z-index: -1;
+  width: 99px;
+  height: 71px;
+  background-image: url("../img/blue-dots.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.offer__second-picture {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.offer__second-picture::after {
+  content: "";
+  position: absolute;
+  right: 14%;
+  bottom: -54px;
+  z-index: -1;
+  width: 99px;
+  height: 71px;
+  background-image: url("../img/orange-dots.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.offer__image {
+  border-radius: 16px;
 }
 
 .main-footer {

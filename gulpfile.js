@@ -160,7 +160,7 @@ function js() {
 function images() {
     return src(path.src.img)
     .pipe(newer(path.build.img))
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 85}))
     .pipe(dest(path.build.img))
     .pipe(src(path.src.img))
     .pipe(newer(path.build.img))

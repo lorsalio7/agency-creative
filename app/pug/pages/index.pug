@@ -11,6 +11,7 @@ block vars
   - var contactArray = [{linkName: "(+62) 893912392190", linkUrl: "tel:+62893912392190"},{linkName: "agecnycr@gmail.com", linkUrl: "mailto:agecnycr@gmail.com"}];
   - var footerSocialLinks = [{linkUrl: "#", linkTitle: "We are on VK", linkIconName: "vk-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "24", linkIconHeight: "16"},{linkUrl: "#", linkTitle: "We are on Pinterest", linkIconName: "pinterest-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "20", linkIconHeight: "25"},{linkUrl: "#", linkTitle: "We are on LinkedIn", linkIconName: "linkedin-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "22", linkIconHeight: "22"},{linkUrl: "#", linkTitle: "Email us", linkIconName: "email-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "22", linkIconHeight: "18"},{linkUrl: "#", linkTitle: "We are on Twitter", linkIconName: "twitter-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "24", linkIconHeight: "20"}];
   - var servicesCard = [{cardTitle: "Social media management", cardClassname: "services-card--monitor"},{cardTitle: "Search engine opimization", cardClassname: "services-card--gear"},{cardTitle: "Design", cardClassname: "services-card--pen"},{cardTitle: "Ads", cardClassname: "services-card--tv"}];
+  - var portfolioCards = [{cardUrl:"#",imageUrl:"img/design-app",cardTitle:"Design byte app"},{cardUrl:"#",imageUrl:"img/cloud-app",cardTitle:"Cloud app"},{cardUrl:"#",imageUrl:"img/design-furniture-app",cardTitle:"Design furniture app"}];
 //- В блоке content размещаем контент
 
 block content
@@ -19,6 +20,7 @@ block content
     include ../includes/_hero.pug
     include ../includes/_about-us.pug
     include ../includes/_services.pug
+    include ../includes/_portfolio.pug
 //- В блоке scripts подключаем нужные скрипты
 block prepend scripts
   script(src="js/slider.min.js")

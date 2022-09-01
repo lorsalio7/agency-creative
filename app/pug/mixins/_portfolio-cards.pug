@@ -1,0 +1,8 @@
+mixin portfolioCards(array)
+  each item in array
+    li.portfolio__item.portfolio-card
+      a(href= item.cardUrl title= item.cardTitle).portfolio-card__link
+        picture
+          source(srcset= item.imageUrl+".webp" type="image/webp")
+          img(loading="lazy" src= item.imageUrl+".jpg" width="350" height="350" alt= item.cardTitle).portfolio-card__image
+        h3.portfolio-card__title= item.cardTitle

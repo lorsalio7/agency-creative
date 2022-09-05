@@ -16,6 +16,8 @@
   height: 31px;
   box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
   background: linear-gradient(rgb(68 133 255 / 80%) 0%, rgb(55 125 255));
+  animation: bouncing 2s ease-in-out infinite;
+  animation-delay: 0.5s;
 }
 
 .hero__element-1::after {
@@ -28,6 +30,22 @@
   height: 31px;
   box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
   background: linear-gradient(rgb(255 142 142) 0%, rgb(246 36 36));
+  animation: bouncing 2s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
 }
 
 .hero__title {
@@ -73,6 +91,8 @@
   height: 31px;
   box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
   background: linear-gradient(rgb(255 142 142) 0%, rgb(246 36 36));
+  animation: bouncing 2s ease-in-out infinite;
+  animation-delay: 0.1s;
 }
 
 .hero__element-2::after {
@@ -85,6 +105,8 @@
   height: 31px;
   box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
   background: linear-gradient(rgb(68 133 255 / 80%) 0%, rgb(55 125 255));
+  animation: bouncing 2s ease-in-out infinite;
+  animation-delay: 0.3s;
 }
 
 .hero-card {

@@ -1,6 +1,6 @@
 mixin testimonialsCards(array)
   each item in array
-    li.testimonials__item
+    li(data-aos="fade-up" data-aos-delay= item.carAnimationDelay data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom").testimonials__item
       blockquote.quote
         header.quote__header
           picture

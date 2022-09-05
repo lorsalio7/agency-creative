@@ -1,15 +1,15 @@
 .hero
   .container
     .hero__element-1
-      h2.hero__title Make your dream business goal come true
-      p.hero__description when you need us for improve your business,#[br] then come with us to help your business have reach it, you just sit and feel that goal
-      .hero__button
+      h2(data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000").hero__title Make your dream business goal come true
+      p(data-aos="fade-up" data-aos-delay="800" data-aos-duration="700").hero__description when you need us for improve your business,#[br] then come with us to help your business have reach it, you just sit and feel that goal
+      .hero__button(data-aos="fade-up" data-aos-delay="1100" data-aos-duration="700")
         a(href="#").button.button--primary Start Project
     .hero__element-2
-      .hero__card.hero-card.hero-card--projects
+      .hero__card.hero-card.hero-card--projects(data-aos="fade-right" data-aos-delay="1400" data-aos-duration="700")
         span.hero-card__subtitle Great project
         p.hero-card__description #[b 800+] Done
-      .hero__card.hero-card.hero-card--review
+      .hero__card.hero-card.hero-card--review(data-aos="fade-left" data-aos-delay="300" data-aos-duration="700" data-aos-anchor-placement="top-center")
         blockquote.hero__review.hero-review
           header.hero-review__header
             picture
@@ -19,7 +19,7 @@
               cite.hero-review__name Bill Adams
               p.hero-review__position CEO UpTech
           p.hero-review__quote This team is really the best in its field,I don't regret working with them, and will come back again thanks
-      .hero__photo-wrapper
+      .hero__photo-wrapper(data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700")
         picture
           source(srcset="img/team-photo.webp" type="image/webp")
           img(loading="lazy" src="img/team-photo.jpg" width="739" height="501" alt="Photo team Creative Agency").hero__photo

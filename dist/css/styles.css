@@ -679,6 +679,10 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 133, 255, 0.8)), to(#377dff));
   background: -o-linear-gradient(rgba(68, 133, 255, 0.8) 0%, #377dff);
   background: linear-gradient(rgba(68, 133, 255, 0.8) 0%, #377dff);
+  -webkit-animation: bouncing 2s ease-in-out infinite;
+          animation: bouncing 2s ease-in-out infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .hero__element-1::after {
@@ -694,6 +698,44 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8e8e), to(#f62424));
   background: -o-linear-gradient(#ff8e8e 0%, #f62424);
   background: linear-gradient(#ff8e8e 0%, #f62424);
+  -webkit-animation: bouncing 2s ease-in-out infinite;
+          animation: bouncing 2s ease-in-out infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes bouncing {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
 }
 
 .hero__title {
@@ -746,6 +788,10 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8e8e), to(#f62424));
   background: -o-linear-gradient(#ff8e8e 0%, #f62424);
   background: linear-gradient(#ff8e8e 0%, #f62424);
+  -webkit-animation: bouncing 2s ease-in-out infinite;
+          animation: bouncing 2s ease-in-out infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .hero__element-2::after {
@@ -761,6 +807,10 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 133, 255, 0.8)), to(#377dff));
   background: -o-linear-gradient(rgba(68, 133, 255, 0.8) 0%, #377dff);
   background: linear-gradient(rgba(68, 133, 255, 0.8) 0%, #377dff);
+  -webkit-animation: bouncing 2s ease-in-out infinite;
+          animation: bouncing 2s ease-in-out infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .hero-card {
@@ -1103,7 +1153,6 @@ body {
   list-style-type: none;
   margin: 0;
   margin-bottom: -40px;
-  margin-left: -40px;
   padding: 0;
 }
 
@@ -1124,11 +1173,11 @@ body {
   margin-left: 40px;
   min-height: 269px;
   max-width: 36.59%;
-  -webkit-transition: -webkit-box-shadow 0.3s ease;
-  transition: -webkit-box-shadow 0.3s ease;
-  -o-transition: box-shadow 0.3s ease;
-  transition: box-shadow 0.3s ease;
-  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 .services__item:hover {
@@ -1245,8 +1294,7 @@ body {
   cursor: pointer;
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
+.portfolio-card:hover {
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);

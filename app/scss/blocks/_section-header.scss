@@ -9,6 +9,29 @@
   font-size: 24px;
   line-height: 24px;
   color: rgb(var(--color-dodger-blue));
+
+  @include px920 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include px768 {
+    margin-bottom: 15px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  @include px600 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include px425 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .section-header__subtitle {
@@ -19,4 +42,20 @@
   font-size: 55px;
   line-height: initial;
   color: rgb(var(--color-cod-gray));
+
+  @include px920 {
+    font-size: 45px;
+  }
+
+  @include px768 {
+    font-size: 38px;
+  }
+
+  @include px600 {
+    font-size: 30px;
+  }
+
+  @include px425 {
+    font-size: 24px;
+  }
 }

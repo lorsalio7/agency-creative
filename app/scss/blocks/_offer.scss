@@ -1,31 +1,75 @@
 .offer {
   padding-top: 148px;
   padding-bottom: 140px;
+
+  @include px600 {
+    padding-top: 20px;
+  }
 }
 
 .offer__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include px768 {
+    flex-direction: column-reverse;
+  }
 }
 
 .offer__element-1 {
   max-width: 490px;
+  flex-shrink: 2;
+  margin-right: 30px;
+
+  @include px768 {
+    margin-right: 0;
+  }
 }
 
 .offer__header {
   margin-bottom: 33px;
   text-align: left;
+
+  @include px768 {
+    text-align: center;
+  }
+
+  @include px425 {
+    margin-bottom: 25px;
+  }
 }
 
 .offer__description-text {
   margin-bottom: 24px;
+
+  @include px768 {
+    text-align: center;
+  }
+}
+
+.offer__button {
+  @include px768 {
+    text-align: center;
+  }
 }
 
 .offer__element-2 {
   display: flex;
   align-items: flex-start;
   min-height: 382px;
+
+  @include px768 {
+    margin-bottom: 45px;
+  }
+
+  @include px600 {
+    min-height: 350px;
+  }
+
+  @include px425 {
+    min-height: 300px;
+  }
 }
 
 .offer__first-picture {
@@ -33,6 +77,14 @@
   z-index: 10;
   align-self: flex-end;
   margin-right: -32px;
+
+  @include px600 {
+    margin-right: -34px;
+  }
+
+  @include px425 {
+    margin-right: -54px;
+  }
 }
 
 .offer__first-picture::after {
@@ -47,6 +99,10 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include px425 {
+    display: none;
+  }
 }
 
 .offer__second-picture {
@@ -66,8 +122,14 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include px425 {
+    display: none;
+  }
 }
 
 .offer__image {
   border-radius: 16px;
+  width: 100%;
+  height: auto;
 }

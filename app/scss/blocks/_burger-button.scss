@@ -1,0 +1,98 @@
+.burger-button {
+  position: relative;
+  z-index: 100;
+  display: none;
+  border: none;
+  width: 50px;
+  height: 43px;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include px920 {
+    display: block;
+  }
+
+  @include px425 {
+    width: 29px;
+    height: 25px;
+  }
+}
+
+.burger-button--active .burger-button__line {
+  background-color: transparent;
+}
+
+.burger-button--active .burger-button__line::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition:
+    top 0.3s ease-in-out,
+    transform 0.3s 0.3s ease-in-out;
+}
+
+.burger-button--active .burger-button__line::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition:
+    top 0.3s ease-in-out,
+    transform 0.3s 0.3s ease-in-out;
+}
+
+.burger-button__line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  border-radius: 2px;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(var(--color-cod-gray));
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease-in-out;
+
+  @include px425 {
+    width: 14px;
+  }
+}
+
+.burger-button__line::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: -12px;
+  display: block;
+  border-radius: 2px;
+  width: 40px;
+  height: 2px;
+  background-color: rgb(var(--color-cod-gray));
+  transition:
+    top 0.3s 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+
+  @include px425 {
+    left: -3px;
+    top: -6px;
+    width: 20px;
+  }
+}
+
+.burger-button__line::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 12px;
+  display: block;
+  border-radius: 2px;
+  width: 40px;
+  height: 2px;
+  background-color: rgb(var(--color-cod-gray));
+  transition:
+    top 0.3s 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+
+  @include px425 {
+    left: -3px;
+    top: 6px;
+    width: 20px;
+  }
+}

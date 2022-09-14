@@ -7,16 +7,17 @@
     <title>Agency Creative</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page">
     <header class="main-header">
-      <div class="container">
-        <nav class="main-navigation"><a class="logo">
-            <svg class="logo__icon" width="53" height="50">
-              <use xlink:href="img/sprite.svg#logo-ic"></use>
-            </svg>
-            <div class="logo__text"><span class="logo__top-text">Agency</span><span class="logo__bottom-text">Creative</span></div></a>
+      <div class="container main-header__container"><a class="logo">
+          <svg class="logo__icon" width="53" height="50">
+            <use xlink:href="img/sprite.svg#logo-ic"></use>
+          </svg>
+          <div class="logo__text"><span class="logo__top-text">Agency</span><span class="logo__bottom-text">Creative</span></div></a>
+        <nav class="main-header__navigation">
           <ul class="site-navigation">
             <li class="site-navigation__item"><a class="site-navigation__link site-navigation__link--active" href="#">Home</a></li>
             <li class="site-navigation__item"><a class="site-navigation__link " href="#">About</a></li>
@@ -25,7 +26,8 @@
           </ul>
           <button class="button button--outline" type="button">Contact us</button>
         </nav>
-      </div>
+        <button class="burger-button" type="button" aria-label="Menu"><span class="burger-button__line"></span></button>
+      </div><span class="main-header__overlay"></span>
     </header>
     <main class="index-main">
       <h1 class="visually-hidden">Website for a creative agency helping your business</h1>
@@ -43,7 +45,7 @@
             <div class="hero__card hero-card hero-card--review" data-aos="fade-left" data-aos-delay="300" data-aos-duration="700" data-aos-anchor-placement="top-center">
               <blockquote class="hero__review hero-review">
                 <header class="hero-review__header">
-                  <picture>
+                  <picture class="hero-review__image-wrapper">
                     <source srcset="img/hero-review-photo.webp" type="image/webp"><img class="hero-review__image" loading="lazy" src="img/hero-review-photo.jpg" width="32" height="32" alt="User photo">
                   </picture>
                   <div class="hero-review__about-user">
@@ -77,8 +79,8 @@
             <div class="about-us__text-content" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
               <p class="description-text about-us__description">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</p>
               <p class="description-text about-us__description">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</p>
-              <div class="about-us__buttons"><a class="button button--primary about-us__link" href="#">About us</a>
-                <button class="button button--outline" type="button">
+              <div class="about-us__buttons"><a class="about-us__button button button--primary about-us__link" href="#">About us</a>
+                <button class="about-us__button button button--outline" type="button">
                   <svg class="button__icon" width="24" height="24">
                     <use xlink:href="img/sprite.svg#play-ic"></use>
                   </svg><span class="button__text">Our Story</span>
@@ -143,55 +145,57 @@
         </div>
       </section>
       <section class="testimonials">
-        <div class="container">
+        <div class="container testimonials__container">
           <header class="section-header testimonials__header">
             <h2 class="section-header__title" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-anchor-placement="top-center">Testimonial</h2>
             <p class="section-header__subtitle" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" data-aos-anchor-placement="top-center">People talk about us</p>
           </header>
-          <ul class="testimonials__list">
-            <li class="testimonials__item" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-              <blockquote class="quote">
-                <header class="quote__header">
-                  <picture>
-                    <source srcset="img/user-photo.webp" type="image/webp"/><img class="quote__avatar" loading="lazy" src="img/user-photo.jpg" width="70" height="70" alt="Photo user Angel Rose"/>
-                  </picture>
-                  <div class="quote__about-user">
-                    <cite class="quote__name">Angel Rose</cite>
-                    <p class="quote__position">Creative Manager</p>
-                  </div>
-                </header>
-                <p class="quote__review">There are many variations passages of Lorem Ipsum majority some by words which don't look.</p>
-              </blockquote>
-            </li>
-            <li class="testimonials__item" data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-              <blockquote class="quote">
-                <header class="quote__header">
-                  <picture>
-                    <source srcset="img/user-photo.webp" type="image/webp"/><img class="quote__avatar" loading="lazy" src="img/user-photo.jpg" width="70" height="70" alt="Photo user Angel Rose"/>
-                  </picture>
-                  <div class="quote__about-user">
-                    <cite class="quote__name">Angel Rose</cite>
-                    <p class="quote__position">Creative Manager</p>
-                  </div>
-                </header>
-                <p class="quote__review">There are many variations passages of Lorem Ipsum majority some by words which don't look.</p>
-              </blockquote>
-            </li>
-            <li class="testimonials__item" data-aos="fade-up" data-aos-delay="1700" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-              <blockquote class="quote">
-                <header class="quote__header">
-                  <picture>
-                    <source srcset="img/user-photo.webp" type="image/webp"/><img class="quote__avatar" loading="lazy" src="img/user-photo.jpg" width="70" height="70" alt="Photo user Angel Rose"/>
-                  </picture>
-                  <div class="quote__about-user">
-                    <cite class="quote__name">Angel Rose</cite>
-                    <p class="quote__position">Creative Manager</p>
-                  </div>
-                </header>
-                <p class="quote__review">There are many variations passages of Lorem Ipsum majority some by words which don't look.</p>
-              </blockquote>
-            </li>
-          </ul>
+          <div class="swiper testimonial__slider" data-mobile="false">
+            <ul class="swiper-wrapper testimonials__list">
+              <li class="swiper-slide testimonials__item" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                <blockquote class="quote">
+                  <header class="quote__header">
+                    <picture>
+                      <source srcset="img/user-photo.webp" type="image/webp"/><img class="quote__avatar" loading="lazy" src="img/user-photo.jpg" width="70" height="70" alt="Photo user Angel Rose"/>
+                    </picture>
+                    <div class="quote__about-user">
+                      <cite class="quote__name">Angel Rose</cite>
+                      <p class="quote__position">Creative Manager</p>
+                    </div>
+                  </header>
+                  <p class="quote__review">There are many variations passages of Lorem Ipsum majority some by words which don't look.</p>
+                </blockquote>
+              </li>
+              <li class="swiper-slide testimonials__item" data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                <blockquote class="quote">
+                  <header class="quote__header">
+                    <picture>
+                      <source srcset="img/user-photo.webp" type="image/webp"/><img class="quote__avatar" loading="lazy" src="img/user-photo.jpg" width="70" height="70" alt="Photo user Angel Rose"/>
+                    </picture>
+                    <div class="quote__about-user">
+                      <cite class="quote__name">Angel Rose</cite>
+                      <p class="quote__position">Creative Manager</p>
+                    </div>
+                  </header>
+                  <p class="quote__review">There are many variations passages of Lorem Ipsum majority some by words which don't look.</p>
+                </blockquote>
+              </li>
+              <li class="swiper-slide testimonials__item" data-aos="fade-up" data-aos-delay="1700" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                <blockquote class="quote">
+                  <header class="quote__header">
+                    <picture>
+                      <source srcset="img/user-photo.webp" type="image/webp"/><img class="quote__avatar" loading="lazy" src="img/user-photo.jpg" width="70" height="70" alt="Photo user Angel Rose"/>
+                    </picture>
+                    <div class="quote__about-user">
+                      <cite class="quote__name">Angel Rose</cite>
+                      <p class="quote__position">Creative Manager</p>
+                    </div>
+                  </header>
+                  <p class="quote__review">There are many variations passages of Lorem Ipsum majority some by words which don't look.</p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="offer">
@@ -201,7 +205,8 @@
               <h2 class="visually-hidden section-header__title">Let's start to cooperate</h2>
               <p class="section-header__subtitle">Interesting Collaboration With Us?</p>
             </header>
-            <p class="description-text offer__description-text">Help you to reach your business goal</p><a class="button button--primary" href="#">Get started</a>
+            <p class="description-text offer__description-text">Help you to reach your business goal</p>
+            <div class="offer__button"><a class="button button--primary" href="#">Get started</a></div>
           </div>
           <div class="offer__element-2" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
             <picture class="offer__first-picture">
@@ -286,6 +291,7 @@
       </div>
     </footer>
     <script src="js/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

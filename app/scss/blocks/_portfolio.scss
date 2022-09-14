@@ -4,6 +4,10 @@
 
 .portfolio__subtitle {
   margin-bottom: 38px;
+
+  @include px768 {
+    margin-bottom: 18px;
+  }
 }
 
 .portfolio__description {
@@ -11,6 +15,10 @@
   margin-bottom: 74px;
   max-width: 674px;
   text-align: center;
+
+  @include px425 {
+    margin-bottom: 40px;
+  }
 }
 
 .portfolio__list {
@@ -23,6 +31,11 @@
   margin-right: -92px;
   margin-bottom: -36px;
   padding: 0;
+
+  @include px920 {
+    margin-right: -30px;
+    margin-bottom: 36px;
+  }
 }
 
 .portfolio__list::before {
@@ -37,6 +50,11 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include px920 {
+    left: 24%;
+    bottom: 43px;
+  }
 }
 
 .portfolio__list::after {
@@ -51,11 +69,26 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include px920 {
+    right: 20%;
+    top: -53px;
+  }
+
+  @include px425 {
+    right: 13%;
+    top: -31px;
+  }
 }
 
 .portfolio__item {
   margin-right: 92px;
   margin-bottom: 92px;
+
+  @include px920 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-card {
@@ -76,6 +109,15 @@
 
 .portfolio-card__image {
   border-radius: 30px;
+
+  @include px920 {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include px425 {
+    height: 290px;
+  }
 }
 
 .portfolio-card__title {
@@ -86,6 +128,11 @@
   font-weight: 700;
   font-size: 24px;
   text-transform: capitalize;
+
+  @include px425 {
+    left: 20px;
+    bottom: 24px;
+  }
 }
 
 .portfolio__button {

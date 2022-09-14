@@ -9,3 +9,51 @@
     font-display: swap;
   }
 }
+
+@mixin px375 {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+// @include px375 {}
+
+@mixin px425 {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+// @include px425 {}
+
+@mixin px600 {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+// @include px600 {}
+
+@mixin px768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// @include px768 {}
+
+@mixin px920 {
+  @media (max-width: 920px) {
+    @content;
+  }
+}
+
+// @include px920 {}
+
+@mixin px1024 {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+// @include px1024 {}

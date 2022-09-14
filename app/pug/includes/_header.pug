@@ -1,13 +1,16 @@
 header.main-header
-  .container
-    nav.main-navigation
-      a.logo
-        +svg("logo__icon", "logo-ic", 53, 50)
-        .logo__text
-          span.logo__top-text Agency
-          span.logo__bottom-text Creative
+  .container.main-header__container
+    a.logo
+      +svg("logo__icon", "logo-ic", 53, 50)
+      .logo__text
+        span.logo__top-text Agency
+        span.logo__bottom-text Creative
+    nav.main-header__navigation
       ul.site-navigation
         each link in siteNavigation
           li.site-navigation__item
             a(href= link.linkUrl class=`site-navigation__link ${link.additionalClass}`) #{link.linkName}
       button(type="button").button.button--outline Contact us
+    button(type="button" aria-label="Menu").burger-button
+      span.burger-button__line
+  span.main-header__overlay

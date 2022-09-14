@@ -1,10 +1,17 @@
 .logo {
   display: flex;
+  flex-grow: 1;
   width: 136px;
   height: 50px;
+
+  @include px425 {
+    width: 91px;
+    height: 33px;
+  }
 }
 
 .logo--footer {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
@@ -12,16 +19,61 @@
   width: 187px;
   height: 88px;
   background-color: #fff;
+
+  @include px768 {
+    flex-grow: 0;
+    margin-bottom: 80px;
+  }
+
+  @include px425 {
+    width: 187px;
+    height: 88px;
+  }
+}
+
+.logo--footer .logo__icon {
+  @include px425 {
+    width: 53px;
+    height: 50px;
+  }
+}
+
+.logo--footer .logo__text {
+  @include px425 {
+    margin-left: 12px;
+  }
+}
+
+.logo--footer .logo__top-text {
+  @include px425 {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
+}
+
+.logo--footer .logo__bottom-text {
+  @include px425 {
+    font-size: 16px;
+  }
 }
 
 .logo__icon {
   flex-shrink: 0;
+
+  @include px425 {
+    width: 32px;
+    height: 30px;
+  }
 }
 
 .logo__text {
   display: flex;
   flex-direction: column;
   margin-left: 12px;
+
+  @include px425 {
+    margin-left: 8px;
+  }
 }
 
 .logo__top-text {
@@ -29,8 +81,17 @@
   font-weight: 700;
   font-size: 20px;
   color: rgb(var(--color-cod-gray));
+
+  @include px425 {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
 }
 
 .logo__bottom-text {
   color: rgb(var(--color-cod-gray));
+
+  @include px425 {
+    font-size: 12px;
+  }
 }

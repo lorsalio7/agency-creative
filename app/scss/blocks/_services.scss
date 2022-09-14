@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include px768 {
+    flex-direction: column;
+  }
 }
 
 .services__text-content {
@@ -13,11 +17,22 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 42%;
+
+  @include px768 {
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
 }
 
 .services__description {
   margin-bottom: 24px;
   max-width: 520px;
+
+  @include px768 {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 .services__link {
@@ -28,6 +43,20 @@
   font-size: 20px;
   text-decoration: none;
   color: rgb(var(--color-dodger-blue));
+
+  @include px768 {
+    align-self: flex-start;
+    font-size: 18px;
+  }
+
+  @include px600 {
+    padding-right: 30px;
+    font-size: 16px;
+  }
+
+  @include px425 {
+    font-size: 14px;
+  }
 }
 
 .services__link::after {
@@ -39,19 +68,32 @@
   height: 24px;
   background-image: url("../img/arrow-right.svg");
   background-position: center;
+  background-size: 24px;
   background-repeat: no-repeat;
   transform: translateY(-50%);
   transition: transform 0.3s ease;
+
+  @include px600 {
+    background-size: 18px;
+  }
 }
 
 .services__link:hover::after,
 .services__link:focus::after {
   transform: translate(-8px, -50%);
+
+  @include px600 {
+    transform: translate(-6px, -50%);
+  }
 }
 
 .services__header {
   margin-bottom: 18px;
   text-align: left;
+
+  @include px768 {
+    text-align: center;
+  }
 }
 
 .services__cards {
@@ -66,6 +108,15 @@
   margin: 0;
   margin-bottom: -40px;
   padding: 0;
+
+  @include px768 {
+    justify-content: center;
+    margin-left: -20px;
+  }
+
+  @include px425 {
+    flex-direction: column;
+  }
 }
 
 .services__item {
@@ -78,6 +129,16 @@
   min-height: 269px;
   max-width: 36.59%;
   transition: box-shadow 0.3s ease-in-out;
+
+  @include px920 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    max-width: 45%;
+  }
+
+  @include px425 {
+    max-width: 262px;
+  }
 }
 
 .services__item:hover {
@@ -117,4 +178,19 @@
   line-height: 34px;
   text-transform: capitalize;
   color: rgb(var(--color-cod-gray));
+
+  @include px920 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include px768 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @include px600 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

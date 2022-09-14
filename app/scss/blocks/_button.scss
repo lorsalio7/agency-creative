@@ -6,6 +6,7 @@
   padding: 12px 50px;
   height: 48px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.4;
   text-align: center;
   text-decoration: none;
@@ -14,6 +15,24 @@
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   user-select: none;
+
+  @include px920 {
+    font-size: 15px;
+  }
+
+  @include px768 {
+    padding: 11px 42px;
+    font-size: 14px;
+  }
+
+  @include px600 {
+    font-size: 13px;
+  }
+
+  @include px425 {
+    padding: 10px 35px;
+    font-size: 12px;
+  }
 }
 
 .button__icon {

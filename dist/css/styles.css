@@ -790,7 +790,7 @@ body {
 }
 
 .hero {
-  padding-bottom: 213px;
+  padding-bottom: 107px;
 }
 
 .hero__element-1 {
@@ -1139,7 +1139,8 @@ body {
 }
 
 .about-us {
-  padding-bottom: 157px;
+  padding-top: 106px;
+  padding-bottom: 79px;
 }
 
 .about-us__header {
@@ -1227,7 +1228,8 @@ body {
 }
 
 .services {
-  padding-bottom: 100px;
+  padding-top: 77px;
+  padding-bottom: 50px;
 }
 
 .services__container {
@@ -1391,6 +1393,7 @@ body {
 }
 
 .portfolio {
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 

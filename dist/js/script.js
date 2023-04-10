@@ -81,10 +81,11 @@ burgerMenuWidth.onchange = function (e) {
 };
 
 var slider = document.querySelector(".swiper");
+var mobileSliderWidth = window.matchMedia("(max-width: 600px)");
 var mySwiper;
 
-function mobileSlider() {
-  if (window.innerWidth <= 600 && slider.dataset.mobile == "false") {
+function mobileSlider(mobileSliderWidth) {
+  if (mobileSliderWidth == true && slider.dataset.mobile == "false") {
     mySwiper = new Swiper(slider, {
       slidesPerView: "auto",
       spaceBetween: 30,
@@ -93,7 +94,7 @@ function mobileSlider() {
     slider.dataset.mobile = "true";
   }
 
-  if (window.innerWidth > 600) {
+  if (mobileSliderWidth == false) {
     slider.dataset.mobile = "false";
 
     if (slider.classList.contains("swiper-initialized")) {
@@ -102,7 +103,8 @@ function mobileSlider() {
   }
 }
 
-mobileSlider();
-window.addEventListener("resize", function () {
-  mobileSlider();
-});
+mobileSlider(mobileSliderWidth.matches);
+
+mobileSliderWidth.onchange = function (e) {
+  mobileSlider(e.matches);
+};

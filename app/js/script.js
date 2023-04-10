@@ -4,6 +4,7 @@ AOS.init({
 
 const burgerButton = document.querySelector(".burger-button");
 
+
 function removeActiveClass(elements, activeClass) {
   elements.forEach(element => {
     element.classList.remove(activeClass);
@@ -87,12 +88,12 @@ burgerMenuWidth.onchange = (e) => {
 }
 
 const slider = document.querySelector(".swiper");
-
+const mobileSliderWidth = window.matchMedia("(max-width: 600px)");
 
 let mySwiper;
 
-function mobileSlider() {
-  if(window.innerWidth <= 600 && slider.dataset.mobile == "false") {
+function mobileSlider(mobileSliderWidth) {
+  if(mobileSliderWidth == true && slider.dataset.mobile == "false") {
     mySwiper = new Swiper(slider, {
       slidesPerView: "auto",
       spaceBetween: 30,
@@ -102,18 +103,17 @@ function mobileSlider() {
     slider.dataset.mobile = "true";
   }
 
-  if(window.innerWidth > 600) {
+  if(mobileSliderWidth == false) {
     slider.dataset.mobile = "false";
 
     if(slider.classList.contains("swiper-initialized")) {
       mySwiper.destroy();
     }
-
   }
 }
 
-mobileSlider();
+mobileSlider(mobileSliderWidth.matches);
 
-window.addEventListener("resize", () => {
-  mobileSlider();
-})
+mobileSliderWidth.onchange = (e) => {
+  mobileSlider(e.matches);
+}

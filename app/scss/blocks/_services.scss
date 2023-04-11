@@ -44,47 +44,28 @@
   font-size: 20px;
   text-decoration: none;
   color: rgb(var(--color-dodger-blue));
+  background-image: url("../img/arrow-right.svg");
+  background-position: right 0 top 0;
+  background-repeat: no-repeat;
+  transition: background-position 0.3s ease;
+
+  @include hover-focus {
+    background-position: right 6px top 0;
+  }
 
   @include px768 {
-    align-self: flex-start;
+    align-self: center;
     font-size: 18px;
   }
 
   @include px600 {
     padding-right: 30px;
     font-size: 16px;
+    background-size: 18px;
   }
 
   @include px425 {
     font-size: 14px;
-  }
-}
-
-.services__link::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/arrow-right.svg");
-  background-position: center;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  transform: translateY(-50%);
-  transition: transform 0.3s ease;
-
-  @include px600 {
-    background-size: 18px;
-  }
-}
-
-.services__link:hover::after,
-.services__link:focus::after {
-  transform: translate(-8px, -50%);
-
-  @include px600 {
-    transform: translate(-6px, -50%);
   }
 }
 
@@ -131,6 +112,10 @@
   max-width: 36.59%;
   transition: box-shadow 0.3s ease-in-out;
 
+  @include hover {
+    box-shadow: 4px 4px 30px rgb(var(--color-black) / 10%);
+  }
+
   @include px920 {
     margin-bottom: 20px;
     margin-left: 20px;
@@ -140,10 +125,6 @@
   @include px425 {
     max-width: 262px;
   }
-}
-
-.services__item:hover {
-  box-shadow: 4px 4px 30px rgb(var(--color-black) / 10%);
 }
 
 .services-card {

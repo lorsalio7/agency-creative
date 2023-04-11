@@ -95,10 +95,10 @@
 .portfolio-card {
   transition: transform 0.4s ease-in-out;
   cursor: pointer;
-}
 
-.portfolio-card:hover {
-  transform: scale(1.02);
+  @include hover {
+    transform: scale(1.02);
+  }
 }
 
 .portfolio-card__link {

@@ -24,11 +24,10 @@
   font-size: 18px;
   text-decoration: none;
   color: rgb(var(--color-cod-gray));
-}
 
-.site-navigation__link:hover,
-.site-navigation__link:focus {
-  text-decoration: underline;
+  @include hover-focus {
+    text-decoration: underline;
+  }
 }
 
 .site-navigation__link--active {

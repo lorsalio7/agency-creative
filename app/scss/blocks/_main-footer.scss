@@ -73,6 +73,10 @@
   text-decoration: none;
   color: rgb(var(--color-white));
 
+  @include hover-focus {
+    text-decoration: underline;
+  }
+
   @include px768 {
     font-size: 17px;
   }
@@ -80,11 +84,6 @@
   @include px600 {
     font-size: 16px;
   }
-}
-
-.main-footer-column__link:hover,
-.main-footer-column__link:focus {
-  text-decoration: underline;
 }
 
 .main-footer-column__address {
@@ -104,11 +103,10 @@
 .main-footer-column__email {
   text-decoration: none;
   color: rgb(var(--color-white));
-}
 
-.main-footer-column__email:hover,
-.main-footer-column__email:focus {
-  text-decoration: underline;
+  @include hover-focus {
+    text-decoration: underline;
+  }
 }
 
 .main-footer__socials {
@@ -146,15 +144,14 @@
   background-color: rgb(var(--color-white));
   transition: opacity 0.3s ease;
 
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
   @include px425 {
     width: 36px;
     height: 36px;
   }
-}
-
-.socials-list__link:hover,
-.socials-list__link:focus {
-  opacity: 0.6;
 }
 
 .main-footer__copyright {

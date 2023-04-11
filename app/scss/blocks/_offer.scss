@@ -18,9 +18,9 @@
 }
 
 .offer__element-1 {
-  max-width: 490px;
   flex-shrink: 2;
   margin-right: 30px;
+  max-width: 490px;
 
   @include px768 {
     margin-right: 0;

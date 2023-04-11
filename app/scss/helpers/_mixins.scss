@@ -10,6 +10,30 @@
   }
 }
 
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// @include hover {}
+
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:focus {
+      @content;
+    }
+
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// @include hover-focus {}
+
 @mixin px375 {
   @media (max-width: 375px) {
     @content;

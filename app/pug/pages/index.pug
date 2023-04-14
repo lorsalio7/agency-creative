@@ -1,19 +1,9 @@
-//- Расширяем нужную страницу заранее заготовленным шаблоном
 extends ../layout/main-template.pug
-//- Если необходимо изменить переменную используем block vars(в шаблоне указываем все переменные)
+
 block vars
   - var pageTitle = "Agency Creative";
   - var htmlClass = "index-html";
   - var bodyClass = "page";
-  - var siteNavigation = [{linkName: "Home", linkUrl: "#home", additionalClass: "site-navigation__link--active"},{linkName: "About", linkUrl: "#about-us", additionalClass: ""},{linkName: "Services", linkUrl: "#services", additionalClass: ""},{linkName: "Projects", linkUrl: "#projects", additionalClass: ""}];
-  - var termsArray = [{linkName: "Terms of Service", linkUrl: "#"},{linkName: "Privacy Policy", linkUrl: "#"}];
-  - var companyArray = [{linkName: "Home", linkUrl: "#"},{linkName: "About Us", linkUrl: "#"},{linkName: "Contact Us", linkUrl: "#"}];
-  - var contactArray = [{linkName: "(+62) 893912392190", linkUrl: "tel:+62893912392190"},{linkName: "agecnycr@gmail.com", linkUrl: "mailto:agecnycr@gmail.com"}];
-  - var footerSocialLinks = [{linkUrl: "#", linkTitle: "We are on VK", linkIconName: "vk-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "24", linkIconHeight: "16"},{linkUrl: "#", linkTitle: "We are on Pinterest", linkIconName: "pinterest-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "20", linkIconHeight: "25"},{linkUrl: "#", linkTitle: "We are on LinkedIn", linkIconName: "linkedin-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "22", linkIconHeight: "22"},{linkUrl: "#", linkTitle: "Email us", linkIconName: "email-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "22", linkIconHeight: "18"},{linkUrl: "#", linkTitle: "We are on Twitter", linkIconName: "twitter-ic", linkIconClassname: "socials-list__icon", linkIconWidth: "24", linkIconHeight: "20"}];
-  - var servicesCard = [{cardTitle: "Social media management", cardClassname: "services-card--monitor"},{cardTitle: "Search engine opimization", cardClassname: "services-card--gear"},{cardTitle: "Design", cardClassname: "services-card--pen"},{cardTitle: "Ads", cardClassname: "services-card--tv"}];
-  - var portfolioCards = [{cardUrl:"#",imageUrl:"img/design-app",cardTitle:"Design byte app",cardAnimationDelay: 100},{cardUrl:"#",imageUrl:"img/cloud-app",cardTitle:"Cloud app",cardAnimationDelay: 400},{cardUrl:"#",imageUrl:"img/design-furniture-app",cardTitle:"Design furniture app",cardAnimationDelay: 700}];
-  - var testimonialsCard = [{reviewName: "Angel Rose",imageUrl: "img/user-photo",userPosition: "Creative Manager",reviewText: "There are many variations passages of Lorem Ipsum majority some by words which don't look.", carAnimationDelay: 1100},{reviewName: "Angel Rose",imageUrl: "img/user-photo",userPosition: "Creative Manager",reviewText: "There are many variations passages of Lorem Ipsum majority some by words which don't look.", carAnimationDelay: 1400},{reviewName: "Angel Rose",imageUrl: "img/user-photo",userPosition: "Creative Manager",reviewText: "There are many variations passages of Lorem Ipsum majority some by words which don't look.", carAnimationDelay: 1700}];
-//- В блоке content размещаем контент
 
 block prepend styles
   link(rel="stylesheet", href="css/aos.css")
@@ -28,7 +18,7 @@ block content
     include ../includes/_portfolio.pug
     include ../includes/_testimonials.pug
     include ../includes/_offer.pug
-//- В блоке scripts подключаем нужные скрипты
+
 block prepend scripts
   script(src="js/aos.js")
   script(src="js/swiper.min.js")

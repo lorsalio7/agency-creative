@@ -8,16 +8,30 @@
   align-items: center;
   justify-content: space-between;
 
-  @include px768 {
+  @include px920 {
     flex-direction: column;
+  }
+}
+
+.services__header {
+  margin-bottom: 18px;
+  text-align: left;
+
+  @include px920 {
+    text-align: center;
   }
 }
 
 .services__text-content {
   display: flex;
+  flex: 0 2 42%;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 42%;
+
+  @include px920 {
+    align-items: center;
+    margin-bottom: 50px;
+  }
 
   @include px768 {
     align-items: center;
@@ -29,6 +43,10 @@
 .services__description {
   margin-bottom: 24px;
   max-width: 520px;
+
+  @include px920 {
+    max-width: 700px;
+  }
 
   @include px768 {
     max-width: 100%;
@@ -53,14 +71,16 @@
     background-position: right 6px top 0;
   }
 
-  @include px768 {
+  @include px920 {
     align-self: center;
     font-size: 18px;
+    background-position: right 6px top -2px;
   }
 
   @include px600 {
     padding-right: 30px;
     font-size: 16px;
+    background-position: right 6px top 0;
     background-size: 18px;
   }
 
@@ -69,17 +89,13 @@
   }
 }
 
-.services__header {
-  margin-bottom: 18px;
-  text-align: left;
-
-  @include px768 {
-    text-align: center;
-  }
-}
-
 .services__cards {
-  flex: 1 1 51%;
+  flex: 0 0 51%;
+
+  @include px920 {
+    flex: 0 0 100%;
+    max-width: 700px;
+  }
 }
 
 .services__list {
@@ -91,25 +107,25 @@
   margin-bottom: -40px;
   padding: 0;
 
-  @include px768 {
+  @include px920 {
     justify-content: center;
     margin-left: -20px;
   }
 
   @include px425 {
     flex-direction: column;
+    margin-left: 0;
   }
 }
 
 .services__item {
   display: flex;
-  flex: 0 0 262px;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
   margin-left: 40px;
+  width: calc((100% - 40px * 2) / 2);
   min-height: 269px;
-  max-width: 36.59%;
   transition: box-shadow 0.3s ease-in-out;
 
   @include hover {
@@ -119,11 +135,11 @@
   @include px920 {
     margin-bottom: 20px;
     margin-left: 20px;
-    max-width: 45%;
   }
 
   @include px425 {
-    max-width: 262px;
+    margin-left: 0;
+    width: 100%;
   }
 }
 

@@ -4,12 +4,8 @@
   line-height: 32px;
   color: rgb(var(--color-tundora));
 
-  @include px920 {
-    font-size: 18px;
-  }
-
   @include px768 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
   }
 

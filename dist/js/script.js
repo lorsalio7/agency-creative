@@ -1,8 +1,8 @@
 "use strict";
 
-AOS.init({
-  once: true
-});
+// AOS.init({
+//   once: true
+// });
 var burgerButton = document.querySelector(".burger-button");
 
 function removeActiveClass(elements, activeClass) {

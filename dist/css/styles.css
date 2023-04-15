@@ -737,6 +737,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.4;
+  white-space: nowrap;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
@@ -1141,9 +1142,9 @@ body {
 
 .about-us__photo-wrapper {
   position: relative;
-  -webkit-box-flex: 1 2 44%;
-      -ms-flex-positive: 1 2 44%;
-          flex-grow: 1 2 44%;
+  -webkit-box-flex: 1 1 44%;
+      -ms-flex-positive: 1 1 44%;
+          flex-grow: 1 1 44%;
   margin-right: 46px;
 }
 
@@ -1178,14 +1179,15 @@ body {
 .about-us__photo {
   border-radius: 24px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .about-us__text-content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 49%;
-          flex: 1 0 49%;
+      -ms-flex: 1 1 49%;
+          flex: 1 1 49%;
   padding: 0 20px;
 }
 
@@ -1197,6 +1199,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1227,10 +1231,18 @@ body {
           justify-content: space-between;
 }
 
+.services__header {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
 .services__text-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 2 42%;
+          flex: 0 2 42%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1238,7 +1250,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 42%;
 }
 
 .services__description {
@@ -1263,15 +1274,10 @@ body {
   transition: background-position 0.3s ease;
 }
 
-.services__header {
-  margin-bottom: 18px;
-  text-align: left;
-}
-
 .services__cards {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 51%;
-          flex: 1 1 51%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 51%;
+          flex: 0 0 51%;
 }
 
 .services__list {
@@ -1293,9 +1299,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 262px;
-          flex: 0 0 262px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1304,8 +1307,8 @@ body {
           justify-content: center;
   margin-bottom: 40px;
   margin-left: 40px;
+  width: calc((100% - 80px) / 2);
   min-height: 269px;
-  max-width: 36.59%;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: -webkit-box-shadow 0.3s ease-in-out;
   -o-transition: box-shadow 0.3s ease-in-out;
@@ -1880,23 +1883,82 @@ body {
     font-size: 45px;
   }
 
-  .description-text {
-    font-size: 18px;
+  .about-us__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .about-us__photo-wrapper {
-    margin-right: 26px;
+    margin-right: 0;
+  }
+
+  .about-us__text-content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-bottom: 50px;
+    padding: 0;
+    max-width: 700px;
   }
 
   .about-us__buttons {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .services__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .services__header {
+    text-align: center;
+  }
+
+  .services__text-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .services__description {
+    max-width: 700px;
+  }
+
+  .services__link {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 18px;
+    background-position: right 6px top -2px;
+  }
+
+  .services__cards {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 700px;
+  }
+
+  .services__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -20px;
   }
 
   .services__item {
     margin-bottom: 20px;
     margin-left: 20px;
-    max-width: 45%;
   }
 
   .services-card__title {
@@ -2019,18 +2081,8 @@ body {
   }
 
   .description-text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
-  }
-
-  .about-us__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .about-us__photo-wrapper {
@@ -2047,24 +2099,6 @@ body {
     bottom: -18px;
   }
 
-  .about-us__text-content {
-    margin-bottom: 50px;
-    padding: 0;
-  }
-
-  .about-us__buttons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .services__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .services__text-content {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2076,24 +2110,6 @@ body {
   .services__description {
     max-width: 100%;
     text-align: center;
-  }
-
-  .services__link {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 18px;
-  }
-
-  .services__header {
-    text-align: center;
-  }
-
-  .services__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: -20px;
   }
 
   .services-card__title {
@@ -2287,6 +2303,7 @@ body {
   .services__link {
     padding-right: 30px;
     font-size: 16px;
+    background-position: right 6px top 0;
     background-size: 18px;
   }
 
@@ -2561,10 +2578,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 0;
   }
 
   .services__item {
-    max-width: 262px;
+    margin-left: 0;
+    width: 100%;
   }
 
   .portfolio__description {

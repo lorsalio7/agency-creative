@@ -1,6 +1,6 @@
-AOS.init({
-  once: true
-});
+// AOS.init({
+//   once: true
+// });
 
 const burgerButton = document.querySelector(".burger-button");
 

@@ -7,4 +7,9 @@
   --color-dodger-blue: 55 125 255; /* #377dff */
   --color-thunder: 56 54 56; /* #383638 */
   --color-tundora: 70 70 70; /* #464646 */
+  --gap-between-sections: 130px;
+
+  @media (max-width: 768px) {
+    --gap-between-sections: 100px;
+  }
 }

@@ -1,9 +1,22 @@
 "use strict";
 
-// AOS.init({
-//   once: true
-// });
+AOS.init({
+  once: true
+});
+var scroll = new SmoothScroll(".site-navigation__link", {
+  header: ".main-header"
+});
 var burgerButton = document.querySelector(".burger-button");
+var header = document.querySelector(".main-header");
+window.addEventListener("scroll", function () {
+  var offsetTop = window.pageYOffset;
+
+  if (offsetTop > 0) {
+    header.classList.add("main-header--active");
+  } else {
+    header.classList.remove("main-header--active");
+  }
+});
 
 function removeActiveClass(elements, activeClass) {
   elements.forEach(function (element) {

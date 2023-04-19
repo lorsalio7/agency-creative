@@ -1,10 +1,36 @@
 .main-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
   padding-top: 72px;
   padding-bottom: 72px;
+  transition:
+    padding 0.3s ease-in,
+    background-color 0.3s ease-in,
+    box-shadow 0.3s ease-in;
 
   @include px920 {
-    padding-top: 42px;
-    padding-bottom: 52px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include px768 {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.main-header--active {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  box-shadow: 0 2px 4px rgba(var(--color-black) / 10%);
+  background-color: rgb(var(--color-white));
+
+  @include px768 {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 

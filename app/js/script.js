@@ -1,9 +1,22 @@
-// AOS.init({
-//   once: true
-// });
+AOS.init({
+  once: true
+});
 
+var scroll = new SmoothScroll(".site-navigation__link", {
+  header: ".main-header"
+});
 const burgerButton = document.querySelector(".burger-button");
 
+let header = document.querySelector(".main-header");
+
+window.addEventListener("scroll", () => {
+  let offsetTop = window.pageYOffset;
+  if(offsetTop > 0) {
+    header.classList.add("main-header--active");
+  } else {
+    header.classList.remove("main-header--active");
+  }
+});
 
 function removeActiveClass(elements, activeClass) {
   elements.forEach(element => {

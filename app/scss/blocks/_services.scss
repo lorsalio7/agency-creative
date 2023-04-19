@@ -1,6 +1,6 @@
 .services {
-  padding-top: 77px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: var(--gap-between-sections);
 }
 
 .services__container {
@@ -109,11 +109,13 @@
 
   @include px920 {
     justify-content: center;
+    margin-bottom: -20px;
     margin-left: -20px;
   }
 
   @include px425 {
     flex-direction: column;
+    margin-bottom: 0;
     margin-left: 0;
   }
 }
@@ -176,6 +178,11 @@
   line-height: 34px;
   text-transform: capitalize;
   color: rgb(var(--color-cod-gray));
+
+  @include px1024 {
+    font-size: 22px;
+    line-height: 32px;
+  }
 
   @include px920 {
     font-size: 20px;

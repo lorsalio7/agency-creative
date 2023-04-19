@@ -1,0 +1,7 @@
+.index-main {
+  padding-top: 176px;
+
+  @include px425 {
+    padding-top: 142px;
+  }
+}

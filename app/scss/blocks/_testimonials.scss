@@ -15,9 +15,11 @@
 }
 
 .testimonial__slider {
+  overflow: visible;
   margin-right: -50px;
 
   @include px600 {
+    overflow: hidden;
     margin-right: 0;
   }
 }
@@ -41,6 +43,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 

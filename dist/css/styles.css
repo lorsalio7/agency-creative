@@ -1489,6 +1489,7 @@ body {
 }
 
 .testimonial__slider {
+  overflow: visible;
   margin-right: -50px;
 }
 
@@ -1831,8 +1832,8 @@ body {
 
 @media (max-width: 920px) {
   .main-header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   .main-header__navigation {
@@ -2033,11 +2034,6 @@ body {
 @media (max-width: 768px) {
   :root {
     --gap-between-sections: 100px;
-  }
-
-  .main-header {
-    padding-top: 22px;
-    padding-bottom: 22px;
   }
 
   .main-header--active {
@@ -2365,6 +2361,7 @@ body {
   }
 
   .testimonial__slider {
+    overflow: hidden;
     margin-right: 0;
   }
 
@@ -2375,6 +2372,7 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   .testimonials__list::before {

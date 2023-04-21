@@ -57,6 +57,7 @@ function openSiteNavigation() {
   var siteNavigationOverlay = document.querySelector(".main-header__overlay");
   var html = document.querySelector(".index-html");
   var widthScroll = window.innerWidth - document.body.offsetWidth + "px";
+  burgerButton.style.marginRight = widthScroll;
   html.classList.add("no-scroll");
   siteNavigation.classList.add("main-header__navigation--active");
   siteNavigationOverlay.classList.add("main-header__overlay--active");
@@ -70,6 +71,7 @@ function openSiteNavigation() {
 function closeSiteNavigation() {
   var siteNavigationOverlay = document.querySelector(".main-header__overlay");
   var html = document.querySelector(".index-html");
+  burgerButton.style.marginRight = 0;
   burgerButton.classList.remove("burger-button--active");
   html.classList.remove("no-scroll");
   siteNavigation.classList.remove("main-header__navigation--active");

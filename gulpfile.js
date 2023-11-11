@@ -77,7 +77,10 @@ function gulpPug() {
   return src(path.src.pug)
 
   .pipe(pug({
-    pretty: true
+    pretty: true,
+    locals: {
+      pugData: JSON.parse(fs.readFileSync("app/pug/pug-data.json", "utf-8"))
+    }
   }))
 
   .pipe(dest("./" + project_destination))
@@ -102,6 +105,7 @@ function jsLibs() {
 
 function watchFiles(params) {
   gulp.watch([path.watch.pug], gulpPug);
+  gulp.watch(["app/pug/pug-data.json"], gulpPug);
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);

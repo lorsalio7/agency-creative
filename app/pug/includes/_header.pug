@@ -7,7 +7,7 @@ header.main-header
         span.logo__bottom-text Creative
     nav.main-header__navigation
       ul.site-navigation
-        each link in siteNavigation
+        each link in pugData.siteNavigation
           li.site-navigation__item
             a(href= link.linkUrl class=`site-navigation__link ${link.additionalClass}`) #{link.linkName}
       button(type="button").button.button--outline Contact us

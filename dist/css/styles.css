@@ -410,7 +410,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/QuicksandLight.woff2") format("woff2");
+  src: local("Quicksand Light"), local("Quicksand-Light"), url("../fonts/QuicksandLight.woff2") format("woff2");
   font-family: "Quicksand";
   font-weight: 300;
   font-style: normal;
@@ -418,7 +418,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/QuicksandRegular.woff2") format("woff2");
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url("../fonts/QuicksandRegular.woff2") format("woff2");
   font-family: "Quicksand";
   font-weight: 400;
   font-style: normal;
@@ -426,7 +426,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/QuicksandSemiBold.woff2") format("woff2");
+  src: local("Quicksand SemiBold"), local("Quicksand-SemiBold"), url("../fonts/QuicksandSemiBold.woff2") format("woff2");
   font-family: "Quicksand";
   font-weight: 600;
   font-style: normal;
@@ -434,7 +434,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/QuicksandBold.woff2") format("woff2");
+  src: local("Quicksand Bold"), local("Quicksand-Bold"), url("../fonts/QuicksandBold.woff2") format("woff2");
   font-family: "Quicksand";
   font-weight: 700;
   font-style: normal;
@@ -442,7 +442,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/NunitoRegular.woff2") format("woff2");
+  src: local("Nunito Regular"), local("Nunito-Regular"), url("../fonts/NunitoRegular.woff2") format("woff2");
   font-family: "Nunito";
   font-weight: 400;
   font-style: normal;
@@ -450,7 +450,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/NunitoSemiBold.woff2") format("woff2");
+  src: local("Nunito SemiBold"), local("Nunito-SemiBold"), url("../fonts/NunitoSemiBold.woff2") format("woff2");
   font-family: "Nunito";
   font-weight: 600;
   font-style: normal;
@@ -458,7 +458,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/NunitoBold.woff2") format("woff2");
+  src: local("Nunito Bold"), local("Nunito-Bold"), url("../fonts/NunitoBold.woff2") format("woff2");
   font-family: "Nunito";
   font-weight: 700;
   font-style: normal;
@@ -466,7 +466,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/NunitoExtraBold.woff2") format("woff2");
+  src: local("Nunito ExtraBold"), local("Nunito-ExtraBold"), url("../fonts/NunitoExtraBold.woff2") format("woff2");
   font-family: "Nunito";
   font-weight: 800;
   font-style: normal;

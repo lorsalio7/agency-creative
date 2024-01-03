@@ -1,9 +1,9 @@
-// @include font("$name", "$font-family", $weight);
-@include font("QuicksandLight", "Quicksand", 300);
-@include font("QuicksandRegular", "Quicksand", 400);
-@include font("QuicksandSemiBold", "Quicksand", 600);
-@include font("QuicksandBold", "Quicksand", 700);
-@include font("NunitoRegular", "Nunito", 400);
-@include font("NunitoSemiBold", "Nunito", 600);
-@include font("NunitoBold", "Nunito", 700);
-@include font("NunitoExtraBold", "Nunito", 800);
+// @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate);
+@include font("QuicksandLight", "Quicksand", 300, normal, "Quicksand Light", "Quicksand-Light");
+@include font("QuicksandRegular", "Quicksand", 400, normal, "Quicksand Regular", "Quicksand-Regular");
+@include font("QuicksandSemiBold", "Quicksand", 600, normal, "Quicksand SemiBold", "Quicksand-SemiBold");
+@include font("QuicksandBold", "Quicksand", 700, normal, "Quicksand Bold", "Quicksand-Bold");
+@include font("NunitoRegular", "Nunito", 400, normal, "Nunito Regular", "Nunito-Regular");
+@include font("NunitoSemiBold", "Nunito", 600, normal, "Nunito SemiBold", "Nunito-SemiBold");
+@include font("NunitoBold", "Nunito", 700, normal, "Nunito Bold", "Nunito-Bold");
+@include font("NunitoExtraBold", "Nunito", 800, normal, "Nunito ExtraBold", "Nunito-ExtraBold");

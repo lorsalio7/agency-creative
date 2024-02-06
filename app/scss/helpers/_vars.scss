@@ -1,12 +1,24 @@
 :root {
   --sans-serif: "Quicksand", sans-serif;
   --serif: "Times New Roman", "Georgia", "Baskerville", serif;
-  --color-white: 255 255 255; /* #ffffff */
-  --color-black: 0 0 0; /* #000000 */
-  --color-cod-gray: 29 29 29; /* #1d1d1d */
-  --color-dodger-blue: 55 125 255; /* #377dff */
-  --color-thunder: 56 54 56; /* #383638 */
-  --color-tundora: 70 70 70; /* #464646 */
+  --color-white: rgb(255, 255, 255); /* #ffffff */
+  --color-black: rgb(0, 0, 0); /* #000000 */
+  --color-black-5: rgba(0, 0, 0, 5%); /* #000000 */
+  --color-black-10: rgba(0, 0, 0, 10%); /* #000000 */
+  --color-black-15: rgba(0, 0, 0, 15%); /* #000000 */
+  --color-black-60: rgba(0, 0, 0, 60%); /* #000000 */
+  --color-cod-gray: rgb(29, 29, 29); /* #1d1d1d */
+  --color-cod-gray-50: rgba(29, 29, 29, 50%); /* #1d1d1d */
+  --color-dodger-blue: rgb(55, 125, 255); /* #377dff */
+  --color-dodger-blue-50: rgba(55, 125, 255, 50%); /* #377dff */
+  --color-dodger-blue-80: rgba(55, 125, 255, 80%); /* #377dff */
+  --color-thunder: rgb(56, 54, 56); /* #383638 */
+  --color-tundora: rgb(70, 70, 70); /* #464646 */
+  --color-tundora-50: rgb(70, 70, 70, 50%); /* #464646 */
+  --color-tundora-60: rgb(70, 70, 70, 60%); /* #464646 */
+  --color-tundora-80: rgb(70, 70, 70, 80%); /* #464646 */
+  --color-mona-lisa: rgb(255, 142, 142); /* #ff8e8e */
+  --color-pomegranate: rgb(246, 36, 36); /* #f62424 */
   --gap-between-sections: 130px;
 
   @media (max-width: 768px) {

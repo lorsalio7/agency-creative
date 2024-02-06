@@ -2,7 +2,7 @@
   margin: 0;
   font-size: 20px;
   line-height: 32px;
-  color: rgb(var(--color-tundora));
+  color: var(--color-tundora);
 
   @include px768 {
     font-size: 18px;

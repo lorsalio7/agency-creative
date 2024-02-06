@@ -15,8 +15,8 @@
   border-radius: 50%;
   width: 31px;
   height: 31px;
-  box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
-  background: linear-gradient(rgb(68 133 255 / 80%) 0%, rgb(55 125 255));
+  box-shadow: 0 3px 20px var(--color-black-5);
+  background: linear-gradient(var(--color-dodger-blue-80) 0%, var(--color-dodger-blue));
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.5s;
 
@@ -51,8 +51,8 @@
   border-radius: 50%;
   width: 31px;
   height: 31px;
-  box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
-  background: linear-gradient(rgb(255 142 142) 0%, rgb(246 36 36));
+  box-shadow: 0 3px 20px var(--color-black-5);
+  background: linear-gradient(var(--color-mona-lisa) 0%, var(--color-pomegranate));
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.3s;
 
@@ -102,7 +102,7 @@
   line-height: 87px;
   letter-spacing: 0.01em;
   text-align: center;
-  color: rgb(var(--color-cod-gray));
+  color: var(--color-cod-gray);
 
   @include px920 {
     font-size: 58px;
@@ -132,7 +132,7 @@
   line-height: 150%;
   letter-spacing: 0.01em;
   text-align: center;
-  color: rgba(var(--color-tundora) / 60%);
+  color: var(--color-tundora-60);
 
   @include px600 {
     font-size: 17px;
@@ -162,8 +162,8 @@
   border-radius: 50%;
   width: 31px;
   height: 31px;
-  box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
-  background: linear-gradient(rgb(255 142 142) 0%, rgb(246 36 36));
+  box-shadow: 0 3px 20px var(--color-black-5);
+  background: linear-gradient(var(--color-mona-lisa) 0%, var(--color-pomegranate));
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.1s;
 
@@ -180,8 +180,8 @@
   border-radius: 50%;
   width: 31px;
   height: 31px;
-  box-shadow: 0 3px 20px rgba(var(--color-black) / 5%);
-  background: linear-gradient(rgb(68 133 255 / 80%) 0%, rgb(55 125 255));
+  box-shadow: 0 3px 20px var(--color-black-5);
+  background: linear-gradient(var(--color-dodger-blue-80) 0%, var(--color-dodger-blue));
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.3s;
 
@@ -199,8 +199,8 @@
   z-index: 20;
   border-radius: 16px;
   padding: 18px 25px;
-  box-shadow: 0 8px 24px rgba(var(--color-black) / 15%);
-  background-color: rgb(var(--color-white));
+  box-shadow: 0 8px 24px var(--color-black-15);
+  background-color: var(--color-white);
 
   @include px768 {
     border-radius: 13px;
@@ -225,7 +225,7 @@
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  color: rgba(var(--color-cod-gray) / 50%);
+  color: var(--color-cod-gray-50);
 
   @include px768 {
     font-size: 10px;
@@ -326,7 +326,7 @@
   font-weight: 700;
   font-style: normal;
   font-size: 10px;
-  color: rgb(var(--color-cod-gray));
+  color: var(--color-cod-gray);
 
   @include px600 {
     margin-bottom: 3px;
@@ -344,7 +344,7 @@
   margin-bottom: 0;
   font-weight: 700;
   font-size: 6px;
-  color: rgba(var(--color-cod-gray) / 50%);
+  color: var(--color-cod-gray-50);
 
   @include px600 {
     font-size: 5px;
@@ -360,7 +360,7 @@
   font-family: "Nunito", sans-serif;
   font-size: 10px;
   line-height: 14px;
-  color: rgb(var(--color-cod-gray));
+  color: var(--color-cod-gray);
 
   @include px600 {
     margin-top: 0;

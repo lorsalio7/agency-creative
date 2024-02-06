@@ -6,7 +6,7 @@
 		"stylelint-declaration-block-no-ignored-properties"
 	],
 	"rules": {
-    "color-function-notation" : "modern",
+    "color-function-notation" : "legacy",
 		"order/order": [
 			"custom-properties",
 			"dollar-variables",

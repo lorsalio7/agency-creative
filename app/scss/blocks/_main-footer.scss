@@ -1,7 +1,7 @@
 .main-footer {
   padding-top: 132px;
   padding-bottom: 18px;
-  background-color: rgb(var(--color-thunder));
+  background-color: var(--color-thunder);
 
   @include px920 {
     padding-top: 90px;
@@ -46,7 +46,7 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 22px;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
   @include px768 {
     font-size: 20px;
@@ -71,7 +71,7 @@
 .main-footer-column__link {
   font-size: 18px;
   text-decoration: none;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
   @include hover-focus {
     text-decoration: underline;
@@ -89,7 +89,7 @@
 .main-footer-column__address {
   font-style: normal;
   font-size: 18px;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
   @include px768 {
     font-size: 17px;
@@ -102,7 +102,7 @@
 
 .main-footer-column__email {
   text-decoration: none;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
   @include hover-focus {
     text-decoration: underline;
@@ -123,7 +123,7 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  border-bottom: 1px solid rgb(var(--color-white));
+  border-bottom: 1px solid var(--color-white);
   padding-right: 50px;
   padding-bottom: 16px;
   padding-left: 50px;
@@ -141,7 +141,7 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: rgb(var(--color-white));
+  background-color: var(--color-white);
   transition: opacity 0.3s ease;
 
   @include hover-focus {
@@ -157,7 +157,7 @@
 .main-footer__copyright {
   font-size: 18px;
   text-align: center;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
   @include px600 {
     font-size: 16px;

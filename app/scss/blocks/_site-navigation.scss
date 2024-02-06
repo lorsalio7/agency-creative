@@ -23,7 +23,7 @@
 .site-navigation__link {
   font-size: 18px;
   text-decoration: none;
-  color: rgb(var(--color-cod-gray));
+  color: var(--color-cod-gray);
 
   @include hover-focus {
     text-decoration: underline;

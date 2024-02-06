@@ -42,24 +42,24 @@
 }
 
 .button--outline {
-  border: 1px solid rgb(var(--color-dodger-blue));
-  color: rgb(var(--color-dodger-blue));
-  background-color: rgb(var(--color-white));
+  border: 1px solid var(--color-dodger-blue);
+  color: var(--color-dodger-blue);
+  background-color: var(--color-white);
 
   @include hover-focus {
-    color: rgb(var(--color-white));
-    background-color: rgb(var(--color-dodger-blue));
+    color: var(--color-white);
+    background-color: var(--color-dodger-blue);
   }
 }
 
 .button--primary {
-  border: 1px solid rgb(var(--color-dodger-blue));
-  box-shadow: 0 4px 8px rgb(var(--color-dodger-blue) / 50%);
-  color: rgb(var(--color-white));
-  background-color: rgb(var(--color-dodger-blue));
+  border: 1px solid var(--color-dodger-blue);
+  box-shadow: 0 4px 8px var(--color-dodger-blue-50);
+  color: var(--color-white);
+  background-color: var(--color-dodger-blue);
 
   @include hover-focus {
-    color: rgb(var(--color-dodger-blue));
-    background-color: rgb(var(--color-white));
+    color: var(--color-dodger-blue);
+    background-color: var(--color-white);
   }
 }

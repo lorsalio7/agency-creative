@@ -88,8 +88,8 @@
   margin-right: 50px;
   border-radius: 20px;
   min-height: 335px;
-  box-shadow: 0 8px 24px rgba(var(--color-black) / 5%);
-  background-color: rgb(var(--color-white));
+  box-shadow: 0 8px 24px var(--color-black-5);
+  background-color: var(--color-white);
 
   @include px1024 {
     flex-grow: 0;
@@ -128,7 +128,7 @@
   font-style: normal;
   font-size: 20px;
   line-height: 26px;
-  color: rgb(var(--color-dodger-blue));
+  color: var(--color-dodger-blue);
 
   @include px600 {
     font-size: 18px;
@@ -140,13 +140,13 @@
   margin-bottom: 0;
   font-size: 11px;
   line-height: 34px;
-  color: rgba(var(--color-tundora) / 50%);
+  color: var(--color-tundora-50);
 }
 
 .quote__review {
   font-size: 18px;
   line-height: 28px;
-  color: rgba(var(--color-tundora) / 80%);
+  color: var(--color-tundora-80);
 
   @include px600 {
     font-size: 16px;

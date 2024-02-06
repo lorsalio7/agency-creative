@@ -18,7 +18,7 @@
   padding: 12px 26px;
   width: 187px;
   height: 88px;
-  background-color: #fff;
+  background-color: var(--color-white);
 
   @include px768 {
     flex-grow: 0;
@@ -80,7 +80,7 @@
   margin-bottom: 6px;
   font-weight: 700;
   font-size: 20px;
-  color: rgb(var(--color-cod-gray));
+  color: var(--color-cod-gray);
 
   @include px425 {
     margin-bottom: 0;
@@ -89,7 +89,7 @@
 }
 
 .logo__bottom-text {
-  color: rgb(var(--color-cod-gray));
+  color: var(--color-cod-gray);
 
   @include px425 {
     font-size: 12px;

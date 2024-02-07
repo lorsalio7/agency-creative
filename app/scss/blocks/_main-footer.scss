@@ -73,7 +73,11 @@
   text-decoration: none;
   color: var(--color-white);
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     text-decoration: underline;
   }
 
@@ -104,7 +108,11 @@
   text-decoration: none;
   color: var(--color-white);
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     text-decoration: underline;
   }
 }
@@ -144,7 +152,11 @@
   background-color: var(--color-white);
   transition: opacity 0.3s ease;
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     opacity: 0.6;
   }
 

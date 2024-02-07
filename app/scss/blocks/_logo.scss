@@ -4,6 +4,10 @@
   width: 136px;
   height: 50px;
 
+  &:focus {
+    @include outline;
+  }
+
   @include px425 {
     width: 91px;
     height: 33px;

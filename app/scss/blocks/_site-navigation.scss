@@ -25,7 +25,11 @@
   text-decoration: none;
   color: var(--color-cod-gray);
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     text-decoration: underline;
   }
 }

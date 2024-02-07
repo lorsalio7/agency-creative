@@ -67,7 +67,11 @@
   background-repeat: no-repeat;
   transition: background-position 0.3s ease;
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     background-position: right 6px top 0;
   }
 

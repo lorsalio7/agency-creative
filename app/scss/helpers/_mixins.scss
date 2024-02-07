@@ -11,6 +11,20 @@
   }
 }
 
+@mixin outline {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 2px;
+}
+
+/* @include outline; */
+
+@mixin outline-inner {
+  outline: 2px solid var(--color-outline);
+  outline-offset: -2px;
+}
+
+/* @include outline-inner; */
+
 @mixin hover {
   @media (hover: hover) {
     &:hover {

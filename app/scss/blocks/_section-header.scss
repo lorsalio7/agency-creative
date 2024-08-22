@@ -10,24 +10,24 @@
   line-height: 24px;
   color: var(--color-dodger-blue);
 
-  @include px920 {
+  @include max-lg {
     font-size: 22px;
     line-height: 22px;
   }
 
-  @include px768 {
+  @include max-md {
     margin-bottom: 15px;
     font-size: 19px;
     line-height: 19px;
   }
 
-  @include px600 {
+  @include max-sm {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 16px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 14px;
@@ -43,19 +43,19 @@
   line-height: initial;
   color: var(--color-cod-gray);
 
-  @include px920 {
+  @include max-lg {
     font-size: 45px;
   }
 
-  @include px768 {
+  @include max-md {
     font-size: 38px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 30px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 24px;
   }
 }

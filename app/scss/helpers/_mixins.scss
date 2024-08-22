@@ -49,50 +49,70 @@
 
 // @include hover-focus {}
 
-@mixin px375 {
-  @media (max-width: 375px) {
+/*
+Шаблон переменных медиа запросов
+
+$xxs: 320px;
+$xs: 375px;
+$sm: 425px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+$xxxl: 1920px; */
+
+$xxs: 375px;  // 375
+$xs: 425px;  // 425
+$sm: 600px;  // 600
+$md: 768px;  // 768
+$lg: 920px;  // 920
+$xl: 1024px;  // 1024
+// $xxl: 1536px;
+// $xxxl: 1920px;
+
+@mixin max-xxs {
+  @media (max-width: $xxs) {
     @content;
   }
 }
 
-// @include px375 {}
+// @include max-xxs {}
 
-@mixin px425 {
-  @media (max-width: 425px) {
+@mixin max-xs {
+  @media (max-width: $xs) {
     @content;
   }
 }
 
-// @include px425 {}
+// @include max-xs {}
 
-@mixin px600 {
-  @media (max-width: 600px) {
+@mixin max-sm {
+  @media (max-width: $sm) {
     @content;
   }
 }
 
-// @include px600 {}
+// @include max-sm {}
 
-@mixin px768 {
-  @media (max-width: 768px) {
+@mixin max-md {
+  @media (max-width: $md) {
     @content;
   }
 }
 
-// @include px768 {}
-
-@mixin px920 {
-  @media (max-width: 920px) {
+// @include max-md {}
+@mixin max-lg {
+  @media (max-width: $lg) {
     @content;
   }
 }
 
-// @include px920 {}
+// @include max-lg {}
 
-@mixin px1024 {
-  @media (max-width: 1024px) {
+@mixin max-xl {
+  @media (max-width: $xl) {
     @content;
   }
 }
 
-// @include px1024 {}
+// @include max-xl {}

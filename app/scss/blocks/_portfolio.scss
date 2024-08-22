@@ -6,7 +6,7 @@
 .portfolio__subtitle {
   margin-bottom: 38px;
 
-  @include px768 {
+  @include max-md {
     margin-bottom: 18px;
   }
 }
@@ -17,7 +17,7 @@
   max-width: 674px;
   text-align: center;
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 40px;
   }
 }
@@ -33,7 +33,7 @@
   margin-bottom: -36px;
   padding: 0;
 
-  @include px920 {
+  @include max-lg {
     margin-right: -30px;
     margin-bottom: 36px;
   }
@@ -52,7 +52,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px920 {
+  @include max-lg {
     left: 24%;
     bottom: 43px;
   }
@@ -71,12 +71,12 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px920 {
+  @include max-lg {
     right: 20%;
     top: -53px;
   }
 
-  @include px425 {
+  @include max-xs {
     right: 13%;
     top: -31px;
   }
@@ -86,7 +86,7 @@
   margin-right: 92px;
   margin-bottom: 92px;
 
-  @include px920 {
+  @include max-lg {
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -120,12 +120,12 @@
   height: 100%;
   object-fit: contain;
 
-  @include px920 {
+  @include max-lg {
     width: 100%;
     object-fit: cover;
   }
 
-  @include px425 {
+  @include max-xs {
     height: 290px;
   }
 }
@@ -139,7 +139,7 @@
   font-size: 24px;
   text-transform: capitalize;
 
-  @include px425 {
+  @include max-xs {
     left: 20px;
     bottom: 24px;
   }

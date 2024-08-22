@@ -2,7 +2,7 @@
   padding-top: 20px;
   padding-bottom: var(--gap-between-sections);
 
-  @include px600 {
+  @include max-sm {
     padding-top: 20px;
   }
 }
@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @include px768 {
+  @include max-md {
     flex-direction: column-reverse;
   }
 }
@@ -22,7 +22,7 @@
   margin-right: 30px;
   max-width: 490px;
 
-  @include px768 {
+  @include max-md {
     margin-right: 0;
   }
 }
@@ -31,11 +31,11 @@
   margin-bottom: 33px;
   text-align: left;
 
-  @include px768 {
+  @include max-md {
     text-align: center;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 25px;
   }
 }
@@ -43,13 +43,13 @@
 .offer__description-text {
   margin-bottom: 24px;
 
-  @include px768 {
+  @include max-md {
     text-align: center;
   }
 }
 
 .offer__button {
-  @include px768 {
+  @include max-md {
     text-align: center;
   }
 }
@@ -59,15 +59,15 @@
   align-items: flex-start;
   min-height: 382px;
 
-  @include px768 {
+  @include max-md {
     margin-bottom: 45px;
   }
 
-  @include px600 {
+  @include max-sm {
     min-height: 350px;
   }
 
-  @include px425 {
+  @include max-xs {
     min-height: 300px;
   }
 }
@@ -78,11 +78,11 @@
   align-self: flex-end;
   margin-right: -32px;
 
-  @include px600 {
+  @include max-sm {
     margin-right: -34px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-right: -54px;
   }
 }
@@ -100,7 +100,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px425 {
+  @include max-xs {
     display: none;
   }
 }
@@ -123,7 +123,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px425 {
+  @include max-xs {
     display: none;
   }
 }

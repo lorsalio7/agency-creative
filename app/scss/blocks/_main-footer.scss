@@ -3,11 +3,11 @@
   padding-bottom: 18px;
   background-color: var(--color-thunder);
 
-  @include px920 {
+  @include max-lg {
     padding-top: 90px;
   }
 
-  @include px425 {
+  @include max-xs {
     padding-top: 45px;
   }
 }
@@ -17,7 +17,7 @@
   justify-content: space-between;
   margin-bottom: 54px;
 
-  @include px768 {
+  @include max-md {
     flex-wrap: wrap;
   }
 }
@@ -30,7 +30,7 @@
   margin-left: 72px;
   width: 100%;
 
-  @include px768 {
+  @include max-md {
     margin-right: -15px;
     margin-left: -15px;
   }
@@ -48,11 +48,11 @@
   font-size: 22px;
   color: var(--color-white);
 
-  @include px768 {
+  @include max-md {
     font-size: 20px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 18px;
   }
 }
@@ -81,11 +81,11 @@
     text-decoration: underline;
   }
 
-  @include px768 {
+  @include max-md {
     font-size: 17px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 16px;
   }
 }
@@ -95,11 +95,11 @@
   font-size: 18px;
   color: var(--color-white);
 
-  @include px768 {
+  @include max-md {
     font-size: 17px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 16px;
   }
 }
@@ -121,7 +121,7 @@
   margin: 0 auto;
   max-width: 500px;
 
-  @include px425 {
+  @include max-xs {
     margin-right: -15px;
     margin-left: -15px;
   }
@@ -160,7 +160,7 @@
     opacity: 0.6;
   }
 
-  @include px425 {
+  @include max-xs {
     width: 36px;
     height: 36px;
   }
@@ -171,12 +171,12 @@
   text-align: center;
   color: var(--color-white);
 
-  @include px600 {
+  @include max-sm {
     font-size: 16px;
     line-height: 1.5;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 14px;
     line-height: 1.5;
   }

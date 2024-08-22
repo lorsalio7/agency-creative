@@ -21,20 +21,20 @@
     @include outline;
   }
 
-  @include px920 {
+  @include max-lg {
     font-size: 15px;
   }
 
-  @include px768 {
+  @include max-md {
     padding: 11px 42px;
     font-size: 14px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 13px;
   }
 
-  @include px425 {
+  @include max-xs {
     padding: 10px 35px;
     font-size: 12px;
   }

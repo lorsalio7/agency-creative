@@ -8,7 +8,7 @@
     @include outline;
   }
 
-  @include px425 {
+  @include max-xs {
     width: 91px;
     height: 33px;
   }
@@ -24,39 +24,39 @@
   height: 88px;
   background-color: var(--color-white);
 
-  @include px768 {
+  @include max-md {
     flex-grow: 0;
     margin-bottom: 80px;
   }
 
-  @include px425 {
+  @include max-xs {
     width: 187px;
     height: 88px;
   }
 }
 
 .logo--footer .logo__icon {
-  @include px425 {
+  @include max-xs {
     width: 53px;
     height: 50px;
   }
 }
 
 .logo--footer .logo__text {
-  @include px425 {
+  @include max-xs {
     margin-left: 12px;
   }
 }
 
 .logo--footer .logo__top-text {
-  @include px425 {
+  @include max-xs {
     margin-bottom: 6px;
     font-size: 20px;
   }
 }
 
 .logo--footer .logo__bottom-text {
-  @include px425 {
+  @include max-xs {
     font-size: 16px;
   }
 }
@@ -64,7 +64,7 @@
 .logo__icon {
   flex-shrink: 0;
 
-  @include px425 {
+  @include max-xs {
     width: 32px;
     height: 30px;
   }
@@ -75,7 +75,7 @@
   flex-direction: column;
   margin-left: 12px;
 
-  @include px425 {
+  @include max-xs {
     margin-left: 8px;
   }
 }
@@ -86,7 +86,7 @@
   font-size: 20px;
   color: var(--color-cod-gray);
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 0;
     font-size: 14px;
   }
@@ -95,7 +95,7 @@
 .logo__bottom-text {
   color: var(--color-cod-gray);
 
-  @include px425 {
+  @include max-xs {
     font-size: 12px;
   }
 }

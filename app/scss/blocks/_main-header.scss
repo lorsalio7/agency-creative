@@ -11,7 +11,7 @@
     background-color 0.3s ease-in,
     box-shadow 0.3s ease-in;
 
-  @include px920 {
+  @include max-lg {
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -23,7 +23,7 @@
   box-shadow: 0 2px 4px var(--color-black-10);
   background-color: var(--color-white);
 
-  @include px768 {
+  @include max-md {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @include px920 {
+  @include max-lg {
     position: fixed;
     right: 0;
     top: 0;
@@ -57,17 +57,17 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  @include px600 {
+  @include max-sm {
     width: 65%;
   }
 
-  @include px425 {
+  @include max-xs {
     width: 75%;
   }
 }
 
 .main-header__navigation--active {
-  @include px920 {
+  @include max-lg {
     transform: translateX(0%);
   }
 }

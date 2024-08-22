@@ -6,7 +6,7 @@
 .about-us__header {
   margin-bottom: 38px;
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 35px;
   }
 }
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
 
-  @include px920 {
+  @include max-lg {
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -26,16 +26,16 @@
   flex-grow: 1 1 44%;
   margin-right: 46px;
 
-  @include px920 {
+  @include max-lg {
     margin-right: 0;
   }
 
-  @include px768 {
+  @include max-md {
     margin-right: 20px;
     margin-left: 20px;
   }
 
-  @include px600 {
+  @include max-sm {
     margin-right: 0;
     margin-left: 0;
   }
@@ -54,11 +54,11 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px768 {
+  @include max-md {
     left: -18px;
   }
 
-  @include px600 {
+  @include max-sm {
     left: 18px;
   }
 }
@@ -76,12 +76,12 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px768 {
+  @include max-md {
     right: -18px;
     bottom: -18px;
   }
 
-  @include px600 {
+  @include max-sm {
     right: 18px;
     bottom: -18px;
   }
@@ -94,15 +94,15 @@
   height: 100%;
   object-fit: contain;
 
-  @include px600 {
+  @include max-sm {
     max-height: 360px;
   }
 
-  @include px425 {
+  @include max-xs {
     max-height: 300px;
   }
 
-  @include px425 {
+  @include max-xs {
     border-radius: 12px;
     max-height: 270px;
   }
@@ -113,7 +113,7 @@
   margin-top: 15px;
   padding: 0 20px;
 
-  @include px920 {
+  @include max-lg {
     flex: 1 1 100%;
     margin-bottom: 50px;
     padding: 0;
@@ -131,15 +131,15 @@
   flex-wrap: wrap;
   align-items: center;
 
-  @include px920 {
+  @include max-lg {
     justify-content: center;
   }
 
-  @include px600 {
+  @include max-sm {
     justify-content: space-between;
   }
 
-  @include px375 {
+  @include max-xxs {
     flex-direction: column;
   }
 }
@@ -151,7 +151,7 @@
 .about-us__link {
   margin-right: 25px;
 
-  @include px425 {
+  @include max-xs {
     margin-right: 0;
   }
 }

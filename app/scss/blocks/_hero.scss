@@ -20,23 +20,23 @@
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.5s;
 
-  @include px920 {
+  @include max-lg {
     left: -3.5%;
     bottom: 19%;
   }
 
-  @include px768 {
+  @include max-md {
     left: -4%;
   }
 
-  @include px600 {
+  @include max-sm {
     left: -4%;
     z-index: -1;
     width: 20px;
     height: 20px;
   }
 
-  @include px425 {
+  @include max-xs {
     left: -5.5%;
     width: 16px;
     height: 16px;
@@ -56,23 +56,23 @@
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.3s;
 
-  @include px920 {
+  @include max-lg {
     right: -3.5%;
     top: 5%;
   }
 
-  @include px768 {
+  @include max-md {
     right: -4%;
   }
 
-  @include px600 {
+  @include max-sm {
     right: -4.5%;
     z-index: -1;
     width: 20px;
     height: 20px;
   }
 
-  @include px425 {
+  @include max-xs {
     right: -5.5%;
     width: 16px;
     height: 16px;
@@ -104,22 +104,22 @@
   text-align: center;
   color: var(--color-cod-gray);
 
-  @include px920 {
+  @include max-lg {
     font-size: 58px;
     line-height: 80px;
   }
 
-  @include px768 {
+  @include max-md {
     font-size: 52px;
     line-height: 70px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 46px;
     line-height: 60px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 28px;
     line-height: 38px;
   }
@@ -134,11 +134,11 @@
   text-align: center;
   color: var(--color-tundora-60);
 
-  @include px600 {
+  @include max-sm {
     font-size: 17px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 14px;
   }
 }
@@ -167,7 +167,7 @@
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.1s;
 
-  @include px768 {
+  @include max-md {
     display: none;
   }
 }
@@ -185,12 +185,12 @@
   animation: bouncing 2s ease-in-out infinite;
   animation-delay: 0.3s;
 
-  @include px768 {
+  @include max-md {
     right: 0.5%;
     top: 27%;
   }
 
-  @include px600 {
+  @include max-sm {
     display: none;
   }
 }
@@ -202,16 +202,16 @@
   box-shadow: 0 8px 24px var(--color-black-15);
   background-color: var(--color-white);
 
-  @include px768 {
+  @include max-md {
     border-radius: 13px;
     padding: 14px 22px;
   }
 
-  @include px600 {
+  @include max-sm {
     padding: 10px 18px;
   }
 
-  @include px425 {
+  @include max-xs {
     border-radius: 6px;
     padding: 10px 12px;
   }
@@ -227,15 +227,15 @@
   text-transform: uppercase;
   color: var(--color-cod-gray-50);
 
-  @include px768 {
+  @include max-md {
     font-size: 10px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 8px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 6px;
     padding-left: 16px;
     font-size: 6px;
@@ -255,7 +255,7 @@
   background-repeat: no-repeat;
   transform: translate(0, -50%);
 
-  @include px425 {
+  @include max-xs {
     width: 13px;
     height: 13px;
   }
@@ -266,15 +266,15 @@
   margin-bottom: 0;
   font-size: 24px;
 
-  @include px768 {
+  @include max-md {
     font-size: 20px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 16px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 12px;
   }
 }
@@ -287,7 +287,7 @@
   display: flex;
   align-items: center;
 
-  @include px600 {
+  @include max-sm {
     margin-bottom: 4px;
   }
 }
@@ -302,12 +302,12 @@
   width: 32px;
   height: 32px;
 
-  @include px600 {
+  @include max-sm {
     width: 18px;
     height: 18px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-right: 5px;
     width: 15px;
     height: 15px;
@@ -315,7 +315,7 @@
 }
 
 .hero-review__about-user {
-  @include px600 {
+  @include max-sm {
     font-size: 12px;
     line-height: 1;
   }
@@ -328,12 +328,12 @@
   font-size: 10px;
   color: var(--color-cod-gray);
 
-  @include px600 {
+  @include max-sm {
     margin-bottom: 3px;
     font-size: 8px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 5px;
     white-space: nowrap;
   }
@@ -346,11 +346,11 @@
   font-size: 6px;
   color: var(--color-cod-gray-50);
 
-  @include px600 {
+  @include max-sm {
     font-size: 5px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 3px;
     white-space: nowrap;
   }
@@ -362,13 +362,13 @@
   line-height: 14px;
   color: var(--color-cod-gray);
 
-  @include px600 {
+  @include max-sm {
     margin-top: 0;
     font-size: 8px;
     line-height: 12px;
   }
 
-  @include px425 {
+  @include max-xs {
     max-width: 104px;
     font-size: 5px;
     line-height: 7px;
@@ -391,17 +391,17 @@
   max-width: 175px;
   white-space: nowrap;
 
-  @include px768 {
+  @include max-md {
     margin-top: -12px;
     margin-right: -106px;
   }
 
-  @include px600 {
+  @include max-sm {
     margin-top: -18px;
     margin-right: -108px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-right: -72px;
   }
 }
@@ -413,17 +413,17 @@
   margin-left: -59px;
   max-width: 166px;
 
-  @include px768 {
+  @include max-md {
     margin-bottom: -30px;
     margin-left: -114px;
   }
 
-  @include px600 {
+  @include max-sm {
     margin-bottom: -22px;
     margin-left: -139px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: -22px;
     margin-left: -60px;
   }
@@ -442,15 +442,15 @@
   width: 100%;
   height: auto;
 
-  @include px768 {
+  @include max-md {
     border-radius: 30px;
   }
 
-  @include px600 {
+  @include max-sm {
     border-radius: 20px;
   }
 
-  @include px425 {
+  @include max-xs {
     border-radius: 12px;
   }
 }
@@ -468,7 +468,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px768 {
+  @include max-md {
     left: auto;
     right: -18px;
     top: -18px;
@@ -488,7 +488,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px768 {
+  @include max-md {
     left: -18px;
     bottom: -18px;
   }

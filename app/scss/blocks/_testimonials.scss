@@ -4,7 +4,7 @@
 }
 
 .testimonials__container {
-  @include px600 {
+  @include max-sm {
     padding-right: 0;
     padding-left: 0;
   }
@@ -18,7 +18,7 @@
   overflow: visible;
   margin-right: -50px;
 
-  @include px600 {
+  @include max-sm {
     overflow: hidden;
     margin-right: 0;
   }
@@ -34,12 +34,12 @@
   margin-bottom: 70px;
   padding: 0;
 
-  @include px1024 {
+  @include max-xl {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  @include px600 {
+  @include max-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
     margin-right: 0;
@@ -60,7 +60,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px600 {
+  @include max-sm {
     display: none;
   }
 }
@@ -78,7 +78,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @include px600 {
+  @include max-sm {
     display: none;
   }
 }
@@ -91,12 +91,12 @@
   box-shadow: 0 8px 24px var(--color-black-5);
   background-color: var(--color-white);
 
-  @include px1024 {
+  @include max-xl {
     flex-grow: 0;
     margin-bottom: 30px;
   }
 
-  @include px600 {
+  @include max-sm {
     flex: 1 0 90%;
     margin-right: 0;
     min-height: 300px;
@@ -130,7 +130,7 @@
   line-height: 26px;
   color: var(--color-dodger-blue);
 
-  @include px600 {
+  @include max-sm {
     font-size: 18px;
   }
 }
@@ -148,11 +148,11 @@
   line-height: 28px;
   color: var(--color-tundora-80);
 
-  @include px600 {
+  @include max-sm {
     font-size: 16px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 14px;
   }
 }

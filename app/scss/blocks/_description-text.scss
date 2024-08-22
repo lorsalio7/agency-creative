@@ -4,16 +4,16 @@
   line-height: 32px;
   color: var(--color-tundora);
 
-  @include px768 {
+  @include max-md {
     font-size: 18px;
     line-height: 28px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 15px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 14px;
     line-height: 24px;
   }

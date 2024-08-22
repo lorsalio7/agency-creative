@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @include px920 {
+  @include max-lg {
     flex-direction: column;
   }
 }
@@ -17,7 +17,7 @@
   margin-bottom: 18px;
   text-align: left;
 
-  @include px920 {
+  @include max-lg {
     text-align: center;
   }
 }
@@ -28,12 +28,12 @@
   flex-direction: column;
   align-items: flex-start;
 
-  @include px920 {
+  @include max-lg {
     align-items: center;
     margin-bottom: 50px;
   }
 
-  @include px768 {
+  @include max-md {
     align-items: center;
     margin-bottom: 30px;
     max-width: 100%;
@@ -44,11 +44,11 @@
   margin-bottom: 24px;
   max-width: 520px;
 
-  @include px920 {
+  @include max-lg {
     max-width: 700px;
   }
 
-  @include px768 {
+  @include max-md {
     max-width: 100%;
     text-align: center;
   }
@@ -75,20 +75,20 @@
     background-position: right 6px top 0;
   }
 
-  @include px920 {
+  @include max-lg {
     align-self: center;
     font-size: 18px;
     background-position: right 6px top -2px;
   }
 
-  @include px600 {
+  @include max-sm {
     padding-right: 30px;
     font-size: 16px;
     background-position: right 6px top 0;
     background-size: 18px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 14px;
   }
 }
@@ -96,7 +96,7 @@
 .services__cards {
   flex: 0 0 51%;
 
-  @include px920 {
+  @include max-lg {
     flex: 0 0 100%;
     max-width: 700px;
   }
@@ -111,13 +111,13 @@
   margin-bottom: -40px;
   padding: 0;
 
-  @include px920 {
+  @include max-lg {
     justify-content: center;
     margin-bottom: -20px;
     margin-left: -20px;
   }
 
-  @include px425 {
+  @include max-xs {
     flex-direction: column;
     margin-bottom: 0;
     margin-left: 0;
@@ -138,12 +138,12 @@
     box-shadow: 4px 4px 30px var(--color-black-10);
   }
 
-  @include px920 {
+  @include max-lg {
     margin-bottom: 20px;
     margin-left: 20px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-left: 0;
     width: 100%;
   }
@@ -183,22 +183,22 @@
   text-transform: capitalize;
   color: var(--color-cod-gray);
 
-  @include px1024 {
+  @include max-xl {
     font-size: 22px;
     line-height: 32px;
   }
 
-  @include px920 {
+  @include max-lg {
     font-size: 20px;
     line-height: 30px;
   }
 
-  @include px768 {
+  @include max-md {
     font-size: 18px;
     line-height: 28px;
   }
 
-  @include px600 {
+  @include max-sm {
     font-size: 16px;
     line-height: 24px;
   }

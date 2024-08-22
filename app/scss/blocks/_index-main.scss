@@ -1,7 +1,7 @@
 .index-main {
   padding-top: 176px;
 
-  @include px425 {
+  @include max-xs {
     padding-top: 142px;
   }
 }

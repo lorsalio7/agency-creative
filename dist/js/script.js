@@ -3,9 +3,11 @@
 AOS.init({
   once: true
 });
+;
 var scroll = new SmoothScroll(".site-navigation__link", {
   header: ".main-header"
 });
+;
 var burgerButton = document.querySelector(".burger-button");
 var header = document.querySelector(".main-header");
 window.addEventListener("scroll", function () {

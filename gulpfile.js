@@ -1,4 +1,3 @@
-
 let project_destination = "dist";
 let development_folder = "app";
 
@@ -54,6 +53,8 @@ let { src, dest } = require("gulp"),
     imagemin = require("gulp-imagemin"),
     webp = require("gulp-webp"),
     fs = require("fs");
+    pngquant = require("imagemin-pngquant");
+    fileinclude = require("gulp-file-include");
 
 
 
@@ -93,14 +94,24 @@ function fonts() {
   .pipe(browsersync.stream())
 }
 function cssLibs() {
-  return src(path.src.css_libs)
-  .pipe(dest(path.build.css))
-  .pipe(browsersync.stream())
+  let filesCssLibs = fs.readdirSync("app/css_libs/");
+  if(filesCssLibs.length > 0) {
+    return src("app/css_libs/**")
+    .pipe(dest("dist/libs/css"))
+    .pipe(browsersync.stream())
+  } else {
+    return
+  }
 }
 function jsLibs() {
-  return src(path.src.js_libs)
-  .pipe(dest(path.build.js))
-  .pipe(browsersync.stream())
+  let filesJsLibs = fs.readdirSync("app/js_libs/");
+  if(filesJsLibs.length > 0) {
+    return src("app/js_libs/**")
+    .pipe(dest("dist/libs/js"))
+    .pipe(browsersync.stream())
+  } else {
+    return
+  }
 }
 
 function watchFiles(params) {
@@ -145,6 +156,12 @@ function css() {
 
 function js() {
     return src(path.src.js)
+    .pipe(
+      fileinclude({
+        prefix: "@@",
+        basepath: "@file"
+      })
+    )
     .pipe(babel({
       presets: ["@babel/preset-env"]
     }))
@@ -168,12 +185,19 @@ function images() {
     .pipe(dest(path.build.img))
     .pipe(src(path.src.img))
     .pipe(newer(path.build.img))
-    .pipe(imagemin({
-      progressive: true,
-      svgoPlugins: [{ removeViewBox: false }],
-      interlaced: true,
-      optimizationLevel: 2
-    }))
+    .pipe(
+      imagemin([
+        imagemin.gifsicle({interlaced: true}),
+        pngquant({quality: [0.7, 0.9]}),
+        imagemin.mozjpeg({quality: 85, progressive: true}),
+        imagemin.svgo({
+          plugins: [
+            {removeViewBox: false},
+            {cleanupIDs: false}
+          ]
+        })
+      ])
+    )
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream())
 }

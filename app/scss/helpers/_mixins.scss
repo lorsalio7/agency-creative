@@ -49,26 +49,12 @@
 
 // @include hover-focus {}
 
-/*
-Шаблон переменных медиа запросов
-
-$xxs: 320px;
-$xs: 375px;
-$sm: 425px;
+$xxs: 375px;
+$xs: 425px;
+$sm: 600px;
 $md: 768px;
-$lg: 1024px;
-$xl: 1280px;
-$xxl: 1536px;
-$xxxl: 1920px; */
-
-$xxs: 375px;  // 375
-$xs: 425px;  // 425
-$sm: 600px;  // 600
-$md: 768px;  // 768
-$lg: 920px;  // 920
-$xl: 1024px;  // 1024
-// $xxl: 1536px;
-// $xxxl: 1920px;
+$lg: 920px;
+$xl: 1024px;
 
 @mixin max-xxs {
   @media (max-width: $xxs) {

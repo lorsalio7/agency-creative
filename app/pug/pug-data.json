@@ -118,19 +118,19 @@
   "portfolioCards": [
     {
       "cardUrl": "#",
-      "imageUrl": "img/design-app",
+      "imageUrl": "img/content/design-app",
       "cardTitle": "Design byte app",
       "cardAnimationDelay": 100
     },
     {
       "cardUrl": "#",
-      "imageUrl": "img/cloud-app",
+      "imageUrl": "img/content/cloud-app",
       "cardTitle": "Cloud app",
       "cardAnimationDelay": 400
     },
     {
       "cardUrl": "#",
-      "imageUrl": "img/design-furniture-app",
+      "imageUrl": "img/content/design-furniture-app",
       "cardTitle": "Design furniture app",
       "cardAnimationDelay": 700
     }
@@ -138,21 +138,21 @@
   "testimonialsCard": [
     {
       "reviewName": "Angel Rose",
-      "imageUrl": "img/user-photo",
+      "imageUrl": "img/content/user-photo",
       "userPosition": "Creative Manager",
       "reviewText": "There are many variations passages of Lorem Ipsum majority some by words which don't look.",
       "cardAnimationDelay": 1100
     },
     {
       "reviewName": "Angel Rose",
-      "imageUrl": "img/user-photo",
+      "imageUrl": "img/content/user-photo",
       "userPosition": "Creative Manager",
       "reviewText": "There are many variations passages of Lorem Ipsum majority some by words which don't look.",
       "cardAnimationDelay": 1400
     },
     {
       "reviewName": "Angel Rose",
-      "imageUrl": "img/user-photo",
+      "imageUrl": "img/content/user-photo",
       "userPosition": "Creative Manager",
       "reviewText": "There are many variations passages of Lorem Ipsum majority some by words which don't look.",
       "cardAnimationDelay": 1700

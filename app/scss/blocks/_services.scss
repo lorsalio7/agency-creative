@@ -62,7 +62,7 @@
   font-size: 20px;
   text-decoration: none;
   color: var(--color-dodger-blue);
-  background-image: url("../img/arrow-right.svg");
+  background-image: url("../img/icons/arrow-right.svg");
   background-position: right 0 top 0;
   background-repeat: no-repeat;
   transition: background-position 0.3s ease;
@@ -160,19 +160,19 @@
 }
 
 .services-card--monitor {
-  background-image: url("../img/monitor-ic.svg");
+  background-image: url("../img/icons/monitor-ic.svg");
 }
 
 .services-card--gear {
-  background-image: url("../img/settings-ic.svg");
+  background-image: url("../img/icons/settings-ic.svg");
 }
 
 .services-card--pen {
-  background-image: url("../img/pen-ic.svg");
+  background-image: url("../img/icons/pen-ic.svg");
 }
 
 .services-card--tv {
-  background-image: url("../img/tv-ic.svg");
+  background-image: url("../img/icons/tv-ic.svg");
 }
 
 .services-card__title {

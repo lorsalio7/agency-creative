@@ -97,7 +97,7 @@ burgerMenuWidth.onchange = function (e) {
   changeMenuView(e.matches);
 };
 
-var slider = document.querySelector(".swiper");
+var slider = document.querySelector(".testimonials__slider");
 var mobileSliderWidth = window.matchMedia("(max-width: 600px)");
 var mySwiper;
 

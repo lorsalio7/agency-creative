@@ -1,4 +1,4 @@
-const slider = document.querySelector(".swiper");
+const slider = document.querySelector(".testimonials__slider");
 const mobileSliderWidth = window.matchMedia("(max-width: 600px)");
 
 let mySwiper;

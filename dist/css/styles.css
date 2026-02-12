@@ -1552,7 +1552,7 @@ body {
   margin-bottom: 57px;
 }
 
-.testimonial__slider {
+.testimonials__slider {
   overflow: visible;
   margin-right: -50px;
 }
@@ -2439,7 +2439,7 @@ body {
     padding-left: 0;
   }
 
-  .testimonial__slider {
+  .testimonials__slider {
     overflow: hidden;
     margin-right: 0;
   }
